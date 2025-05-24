@@ -1,0 +1,474 @@
+/* src/components/employer/CompanyProfile.module.css */
+
+/* Main container and layout styles */
+.employerContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.employerMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.employerSidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+/* Header section with cover photo */
+.employerHeader {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.coverPhoto {
+  height: 200px;
+  width: 100%;
+  background-color: #e9ecef;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.uploadCoverPrompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6c757d;
+}
+
+.uploadCoverPrompt svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Company card with logo and basic info */
+.companyCard {
+  background-color: #f5f5f5;
+  padding: 20px;
+  position: relative;
+}
+
+.companyBasicInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.companyLogo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.companyLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logoPlaceholder {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoPlaceholder svg {
+  width: 100%;
+  height: 100%;
+  color: #adb5bd;
+}
+
+.companyIdSection {
+  flex: 1;
+}
+
+.companyIdSection h2 {
+  font-size: 18px;
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.companyIdSection h2 span {
+  font-weight: normal;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.editButton, .certButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.editButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #0069d9;
+}
+
+.certButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.certButton:hover {
+  background-color: #5a6268;
+}
+
+/* Company details in view mode */
+.companyDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.companyInfoItem {
+  margin-bottom: 10px;
+}
+
+.companyInfoItem h3 {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0 0 5px 0;
+  font-weight: normal;
+}
+
+.companyInfoItem p {
+  margin: 0;
+  font-size: 16px;
+  color: #212529;
+  word-break: break-word;
+}
+
+.companyInfoItem a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.companyInfoItem a:hover {
+  text-decoration: underline;
+}
+
+.address {
+  white-space: pre-line;
+}
+
+/* Edit form styles */
+.companyDetailsEdit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 14px;
+  color: #495057;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #495057;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* About section and other company sections */
+.companyAbout,
+.companySection {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.sectionHeader {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.sectionHeader h2,
+.companySection h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #212529;
+}
+
+.sectionContent {
+  color: #495057;
+  line-height: 1.6;
+}
+
+.emptySection {
+  text-align: center;
+  padding: 30px 0;
+  color: #6c757d;
+}
+
+.addButton {
+  background-color: transparent;
+  border: 1px dashed #6c757d;
+  color: #6c757d;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.2s;
+}
+
+.addButton:hover {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+/* Sidebar styles */
+.sidebarSection {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.sidebarSection h3 {
+  font-size: 16px;
+  margin: 0 0 15px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e9ecef;
+  color: #212529;
+}
+
+.progressBar {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+.sidebarSection p {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #6c757d;
+  text-align: center;
+}
+
+.completeProfileBtn {
+  width: 100%;
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.completeProfileBtn:hover {
+  background-color: #0069d9;
+}
+
+/* Stats container */
+.statsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 5px;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.statNumber {
+  font-size: 18px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Candidate list */
+.candidateList {
+  padding-left: 20px;
+  margin: 0 0 15px 0;
+}
+
+.candidateList li {
+  margin-bottom: 8px;
+}
+
+.candidateList a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.candidateList a:hover {
+  text-decoration: underline;
+}
+
+.viewMoreBtn {
+  width: 100%;
+  padding: 8px;
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.viewMoreBtn:hover {
+  background-color: #f0f7ff;
+}
+
+/* Account manager section */
+.accountManager {
+  display: flex;
+  align-items: center;
+}
+
+.managerPhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.managerPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.managerInfo p {
+  text-align: left;
+  margin: 0 0 5px 0;
+}
+
+.managerName {
+  font-weight: bold;
+  color: #212529;
+}
+
+.managerTitle {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.contactBtn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.contactBtn:hover {
+  background-color: #138496;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .employerContainer {
+    flex-direction: column;
+  }
+
+  .employerSidebar {
+    width: 100%;
+  }
+
+  .companyDetails,
+  .companyDetailsEdit {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .companyBasicInfo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .companyLogo {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .statsContainer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

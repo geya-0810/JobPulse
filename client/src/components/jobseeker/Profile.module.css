@@ -1,0 +1,397 @@
+/* src/components/jobseeker/Profile.module.css */
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  background-color: black; /* 考虑是否需要这个背景色 */
+}
+
+.profileMain {
+  flex: 3;
+}
+
+.profileSidebar {
+  flex: 1;
+}
+
+/* Profile Header */
+.profileHeader {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.profileCoverPhoto {
+  height: 120px;
+  background-color: #f0f2f5; /* 示例颜色，可以自定义 */
+  /* background-image: url('your-cover-image.jpg'); */ /* 可以添加背景图片 */
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profileCard {
+  background-color: #c0c0c0; /* 考虑是否需要这个背景色，通常个人资料卡片是白色 */
+  /* background-color: #fff; */ 
+  padding: 20px;
+  position: relative; /* 用于定位 profilePhoto */
+}
+
+.profileBasicInfo {
+  display: flex;
+  align-items: flex-start; /* 之前是 flex-start */
+  /* align-items: center; 如果希望垂直居中对齐 */
+  margin-bottom: 20px;
+  padding-top: 40px; /* 为头像向上移动留出空间 */
+}
+
+.profilePhoto {
+  width: 100px; /* 调整大小 */
+  height: 100px; /* 调整大小 */
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fff; /* 添加白色边框使其突出 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-right: 20px;
+  position: absolute; /* 相对于 profileCard 定位 */
+  top: -50px; /* 向上移动一半高度 */
+  left: 20px; 
+}
+
+.profilePhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profilePhotoPlaceholder {
+  width: 50px; /* 调整大小 */
+  height: 50px; /* 调整大小 */
+  color: #666;
+}
+
+.profileIdSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-left: 140px; /* 为头像腾出空间 */
+}
+
+.profileIdSection h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.profileIdSection h2 span {
+  font-weight: normal;
+  color: #333;
+}
+
+.editButton {
+  background-color: #f0f0f0;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.editButton:hover {
+  background-color: #e0e0e0;
+}
+
+/* Profile Details */
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px; /* 为编辑按钮和ID部分留出空间 */
+}
+
+.profileInfoItem {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profileInfoItem h3 {
+  width: 120px; /* 固定宽度便于对齐 */
+  font-size: 0.9rem; /* 调整字体大小 */
+  margin: 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.profileInfoItem p {
+  margin: 0;
+  flex: 1;
+  font-weight: normal;
+  font-size: 0.9rem; /* 调整字体大小 */
+  color: #333;
+}
+
+.profileInfoItem .address { /* .address 现在是 .profileInfoItem 的子类 */
+  white-space: pre-line;
+}
+
+/* Edit Mode */
+.profileDetailsEdit {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px; /* 与查看模式保持一致 */
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+}
+
+.formGroup label {
+  width: 120px; /* 与查看模式的 h3 宽度一致 */
+  font-weight: bold;
+  font-size: 0.9rem; /* 调整字体大小 */
+  color: #555;
+}
+
+.formGroup input,
+.formGroup textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 0.9rem; /* 调整字体大小 */
+}
+
+/* Profile Sections */
+.profileSections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profileSection {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.profileSection h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.sectionContent {
+  padding: 10px 0;
+}
+
+.emptySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* 文本居中 */
+  padding: 30px 0;
+  color: #666;
+}
+
+.emptySection p {
+  margin-bottom: 15px; /* 增加与按钮的间距 */
+}
+
+.addButton {
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  padding: 8px 16px;
+  border-radius: 20px; /* 圆角按钮 */
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease; /* 平滑过渡 */
+}
+
+.addButton:hover {
+  background-color: #0a66c2; /* 悬停时改变背景 */
+  color: #fff; /* 悬停时改变文字颜色 */
+}
+
+/* Sidebar */
+.sidebarSection {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebarSection h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.progressBar {
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #0a66c2; /* 进度条颜色 */
+  transition: width 0.5s ease; /* 平滑过渡宽度变化 */
+}
+
+.completeProfileBtn {
+  width: 100%;
+  background-color: #0a66c2;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.completeProfileBtn:hover {
+  background-color: #084b8a; /* 悬停时深一点的颜色 */
+}
+
+.jobList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.jobList li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0; /* 更浅的分割线 */
+}
+
+.jobList li:last-child {
+  border-bottom: none;
+}
+
+.jobList a {
+  color: #0a66c2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.jobList a:hover {
+  text-decoration: underline;
+}
+
+.viewMoreBtn {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.viewMoreBtn:hover {
+  background-color: #0a66c2;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) { /* 调整断点以适应三栏布局到两栏 */
+  .profileContainer {
+    flex-direction: column;
+  }
+  .profileMain {
+    order: 1; /* 主要内容优先 */
+  }
+  .profileSidebar {
+    order: 2; /* 侧边栏在下 */
+    flex: auto; /* 允许侧边栏自动调整大小 */
+  }
+}
+
+@media (max-width: 768px) {
+  /* .profileContainer 已经在上面处理 */
+  
+  .profileBasicInfo {
+    flex-direction: column;
+    align-items: center; /* 头像等居中 */
+    text-align: center;
+    padding-top: 60px; /* 为更大的头像向上移动留出空间 */
+  }
+  
+  .profilePhoto {
+    width: 120px; /* 移动端可适当增大 */
+    height: 120px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    position: static; /* 在移动端恢复正常流布局 */
+    /* top: auto; left: auto; 如果之前是绝对定位，需要重置 */
+  }
+  
+  .profileIdSection {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0; /* 重置边距 */
+    width: 100%; /* 占据全部宽度 */
+    align-items: center; /* 居中对齐 */
+  }
+  
+  .profileInfoItem {
+    flex-direction: column;
+    align-items: flex-start; /* 保持标签在左侧 */
+  }
+  
+  .profileInfoItem h3 {
+    width: 100%; /* 标签占据整行 */
+    margin-bottom: 5px;
+  }
+  
+  .formGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .formGroup label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileCard {
+    padding: 15px;
+  }
+  .profileIdSection h2 {
+    font-size: 1.3rem;
+  }
+  .editButton, .addButton, .completeProfileBtn, .viewMoreBtn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,42 @@
+# public/.htaccess
+RewriteEngine On
+
+# 拦截直接访问 /server/ 路径
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /server/ [NC]
+RewriteRule ^server/ - [R=403,L]
+#RewriteCond %{REQUEST_URI} ^/server/ [NC]
+#RewriteRule ^server/(.*)$ - [R=403,L]
+
+# 处理 API 请求
+RewriteCond %{REQUEST_URI} ^/api/ [NC]
+RewriteRule ^api/(.*)$ /server/index.php [L]
+
+# 其他请求交给前端路由
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L]
+
+
+# RewriteEngine On
+
+# # 优先处理API请求
+# RewriteCond %{REQUEST_URI} ^/api/ [NC]
+# RewriteRule ^api/(.*)$ /server/api/$1 [L]
+
+# # 其他前端路由规则
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ /index.html [L]
+
+
+
+# RewriteEngine On
+
+# RewriteRule ^api/(.*)$ ../server/api/$1 [L]
+
+# Options -Indexes
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ /index.html [L]
+#RewriteRule ^ public/index.html [L]

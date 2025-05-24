@@ -1,0 +1,99 @@
+/* Navbar.module.css */
+.navbar {
+  padding: 10px 20px;
+  z-index: 10;
+  width: auto;
+  display: grid;
+  grid-template-areas:
+    "logo link"
+    "search search";
+  grid-template-columns: 2fr 3fr;
+  /* display: flex;
+  justify-content: space-between;
+  padding: 1rem 5%; 
+  background: #f8f9fa;*/
+  background-color: lightgray;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  align-content: center;
+  position: sticky;  
+  top: 0;
+}
+
+.logo {
+  grid-area: logo;
+  font-size: 2.5rem;  
+  align-self: center ;
+  color: #2d3436;
+  display: flex;
+  gap: 30px;
+  max-height: 100px;
+}
+
+.logo a img {
+  border-radius: 30px;
+}
+
+.linkContainer {
+  height: auto;
+  position: relative;
+  grid-area: link;
+  align-content: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.navLinks li a {
+  color: black;
+}
+
+/* .dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+} */
+
+.searchBar {
+  grid-area: search;
+  width: 60%;
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.searchBar input, .searchBar button {
+  width: 100%;
+  margin: 0px;
+  border: 0px;  
+  border-radius: 0%;
+}
+
+.searchBar input {
+  flex: 10;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.searchBar button {
+  cursor: pointer;
+  height: 100%;
+  flex: 1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+

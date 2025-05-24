@@ -1,0 +1,681 @@
+[13-May-2025 16:19:14 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 16:19:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:65
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 65
+[13-May-2025 16:35:12 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 16:35:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:65
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 65
+[13-May-2025 16:36:43 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 16:36:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:65
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 65
+[13-May-2025 16:37:14 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 16:37:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:65
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 65
+[13-May-2025 16:47:17 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 16:47:17 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 16:47:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:65
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 65
+[13-May-2025 18:35:59 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 18:35:59 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 18:35:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:65
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 65
+[13-May-2025 18:46:25 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 18:46:25 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 18:46:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:65
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 65
+[13-May-2025 18:53:09 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 18:53:09 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 18:53:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:65
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 65
+[13-May-2025 19:01:47 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:01:47 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:01:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:65
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 65
+[13-May-2025 19:37:22 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:37:22 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:37:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:38:07 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:38:07 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:38:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:38:48 Europe/Berlin] PHP Warning:  include(/../config/databaseconnect.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 31
+[13-May-2025 19:38:48 Europe/Berlin] PHP Warning:  include(): Failed opening '/../config/databaseconnect.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 31
+[13-May-2025 19:38:48 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:38:48 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:38:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:40:42 Europe/Berlin] PHP Warning:  include(../config/databaseconnect.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 31
+[13-May-2025 19:40:42 Europe/Berlin] PHP Warning:  include(): Failed opening '../config/databaseconnect.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 31
+[13-May-2025 19:40:42 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:40:42 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:40:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:41:13 Europe/Berlin] PHP Warning:  include(../config/databaseconnect.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 31
+[13-May-2025 19:41:13 Europe/Berlin] PHP Warning:  include(): Failed opening '../config/databaseconnect.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 31
+[13-May-2025 19:41:13 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:41:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 52
+[13-May-2025 19:41:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 53
+[13-May-2025 19:41:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 54
+[13-May-2025 19:44:10 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:44:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 52
+[13-May-2025 19:44:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 53
+[13-May-2025 19:44:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 54
+[13-May-2025 19:44:47 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:44:47 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:44:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:46:37 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:46:37 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:46:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:47:15 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:47:15 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:47:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:51:50 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:51:50 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:51:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:51:54 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:51:54 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:51:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:53:42 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:53:42 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:53:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:53:43 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:53:43 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:53:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 19:53:45 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 19:53:45 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 19:53:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:68
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 68
+[13-May-2025 20:01:54 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 20:01:54 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 20:01:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on bool in C:\xampp\htdocs\jobpulse\server\api\auth.php:69
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 69
+[13-May-2025 20:03:27 Europe/Berlin] PHP Warning:  Undefined variable $dbconnect in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 31
+[13-May-2025 20:03:27 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 20:03:27 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 20:03:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function beginTransaction() on null in C:\xampp\htdocs\jobpulse\server\api\auth.php:69
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(34): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\auth.php on line 69
+[13-May-2025 20:06:04 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 20:06:04 Europe/Berlin] DEBUG22: Attempting to insert user with email: test@example.com
+[13-May-2025 20:06:04 Europe/Berlin] DEBUG: Attempting to insert user with email: test@example.com
+[13-May-2025 20:06:04 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'email'
+[13-May-2025 20:09:37 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 20:09:37 Europe/Berlin] DEBUG22: Attempting to insert user with email: test1234@example.com
+[13-May-2025 20:09:37 Europe/Berlin] DEBUG: Attempting to insert user with email: test1234@example.com
+[13-May-2025 20:09:37 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test1234@example.com' for key 'email'
+[13-May-2025 20:14:44 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 20:14:45 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test@example.com
+[13-May-2025 20:14:45 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test@example.com
+[13-May-2025 20:14:45 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'email'
+[13-May-2025 20:42:28 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 20:42:28 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test@example.com
+[13-May-2025 20:42:28 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test@example.com
+[13-May-2025 20:42:28 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'email'
+[13-May-2025 20:42:39 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 20:42:40 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test@example.com
+[13-May-2025 20:42:40 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test@example.com
+[13-May-2025 20:42:40 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'email'
+[13-May-2025 20:45:14 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 20:45:14 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test1234@example.com
+[13-May-2025 20:45:14 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test1234@example.com
+[13-May-2025 20:45:14 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test1234@example.com' for key 'email'
+[13-May-2025 20:49:52 Europe/Berlin] DEBUG: Entered registration logic
+[13-May-2025 20:49:52 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test1234@example.com
+[13-May-2025 20:49:52 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test1234@example.com
+[13-May-2025 20:49:52 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test1234@example.com' for key 'email'
+[14-May-2025 04:16:21 Europe/Berlin] Connected to database: jobpulse_db
+[14-May-2025 04:16:21 Europe/Berlin] DEBUG: Entered registration logic
+[14-May-2025 04:16:22 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test1234@example.com
+[14-May-2025 04:16:22 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test1234@example.com
+[14-May-2025 04:16:22 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test1234@example.com' for key 'email'
+[14-May-2025 04:17:32 Europe/Berlin] Connected to database: jobpulse_db
+[14-May-2025 04:17:32 Europe/Berlin] DEBUG: Entered registration logic
+[14-May-2025 04:17:33 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test12345@example.com
+[14-May-2025 04:17:33 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test12345@example.com
+[14-May-2025 04:17:33 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12345@example.com' for key 'email'
+[14-May-2025 04:20:56 Europe/Berlin] Connected to database: jobpulse_db
+[14-May-2025 04:20:56 Europe/Berlin] DEBUG: Entered registration logic
+[14-May-2025 04:20:56 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test1234@example.com
+[14-May-2025 04:20:56 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test1234@example.com' for key 'email'
+[14-May-2025 04:21:10 Europe/Berlin] Connected to database: jobpulse_db
+[14-May-2025 04:21:10 Europe/Berlin] DEBUG: Entered registration logic
+[14-May-2025 04:21:10 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test1235@example.com
+[14-May-2025 04:21:10 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test1235@example.com
+[14-May-2025 04:21:10 Europe/Berlin] User inserted: {"user_id":"15","user_type":"jobseeker","email":"test1235@example.com","password":"$2y$10$pQkPxxQ63J19WIOwyg3ov.\/hbx47lheD515zZ4DdtyPkYXxBrZBUG","phone":null,"created_at":"2025-05-14 10:21:10","is_verified":"0"}
+[14-May-2025 09:53:22 Europe/Berlin] Connected to database: jobpulse_db
+[14-May-2025 09:53:22 Europe/Berlin] DEBUG: Entered registration logic
+[14-May-2025 09:53:22 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test12343@example.com
+[14-May-2025 09:53:22 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test12343@example.com
+[14-May-2025 09:53:22 Europe/Berlin] User inserted: {"user_id":"16","user_type":"jobseeker","email":"test12343@example.com","password":"$2y$10$1KXRDo8G58nZQ.XppP\/e3uUrqae9ninwa1kI7lk9ARLIvZRMwt1yu","phone":null,"created_at":"2025-05-14 15:53:22","is_verified":"0"}
+[14-May-2025 10:23:34 Europe/Berlin] Connected to database: jobpulse_db
+[14-May-2025 10:23:34 Europe/Berlin] DEBUG: Entered registration logic
+[14-May-2025 10:23:34 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: bbcd@example.com
+[14-May-2025 10:23:34 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: bbcd@example.com
+[14-May-2025 10:23:34 Europe/Berlin] User inserted: {"user_id":"17","user_type":"jobseeker","email":"bbcd@example.com","password":"$2y$10$FtShuot2gLvOUFiqYWW\/uOyhAjuPaH1PcYYnChPUCAyxvkQkrBWh.","phone":null,"created_at":"2025-05-14 16:23:34","is_verified":"0"}
+[14-May-2025 10:23:55 Europe/Berlin] Connected to database: jobpulse_db
+[14-May-2025 10:23:55 Europe/Berlin] DEBUG: Entered registration logic
+[14-May-2025 10:23:55 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: bbcd@example.com
+[14-May-2025 10:23:55 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'bbcd@example.com' for key 'email'
+[14-May-2025 11:23:43 Europe/Berlin] Connected to database: jobpulse_db
+[14-May-2025 11:23:43 Europe/Berlin] DEBUG: Entered registration logic
+[14-May-2025 11:23:43 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: abcd@example.com
+[14-May-2025 11:23:43 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'abcd@example.com' for key 'email'
+[14-May-2025 11:27:31 Europe/Berlin] Connected to database: jobpulse_db
+[14-May-2025 11:27:31 Europe/Berlin] DEBUG: Entered registration logic
+[14-May-2025 11:27:31 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: cbcd@example.com
+[14-May-2025 11:27:31 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: cbcd@example.com
+[14-May-2025 11:27:31 Europe/Berlin] User inserted: {"user_id":"20","user_type":"jobseeker","email":"cbcd@example.com","password":"$2y$10$kN2cvs36Y9Pu.0.v0YPGQO0cOtHO0CPMryihsbBOF\/x1b18RFKMx.","phone":null,"created_at":"2025-05-14 17:27:31","is_verified":"0"}
+[18-May-2025 19:59:40 Europe/Berlin] Connected to database: jobpulse_db
+[18-May-2025 20:01:22 Europe/Berlin] Connected to database: jobpulse_db
+[18-May-2025 20:01:23 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: key must be a string when using hmac in C:\xampp\htdocs\jobpulse\vendor\firebase\php-jwt\src\JWT.php:249
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\vendor\firebase\php-jwt\src\JWT.php(219): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1Q...', false, 'HS256')
+#1 C:\xampp\htdocs\jobpulse\server\lib\auth.php(28): Firebase\JWT\JWT::encode(Array, false, 'HS256')
+#2 C:\xampp\htdocs\jobpulse\server\api\auth.php(150): generateJWT('16', 'test12343@examp...', Array)
+#3 C:\xampp\htdocs\jobpulse\server\index.php(34): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('login')
+#5 {main}
+  thrown in C:\xampp\htdocs\jobpulse\vendor\firebase\php-jwt\src\JWT.php on line 249
+[19-May-2025 04:38:47 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 04:38:47 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 04:38:47 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test12344@example.com
+[19-May-2025 04:38:48 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test12344@example.com
+[19-May-2025 04:38:48 Europe/Berlin] User inserted: {"user_id":"21","user_type":"jobseeker","email":"test12344@example.com","password":"$2y$10$ijdBg7AqGYe71RBeR2S49uGmvSAi3kGKP5XZiIZsmtjTJwfnJfOii","phone":null,"created_at":"2025-05-19 10:38:48","is_verified":"0"}
+[19-May-2025 04:38:48 Europe/Berlin] 错误：JWT_SECRET 环境变量未设置或为空！
+[19-May-2025 04:38:48 Europe/Berlin] PHP Fatal error:  Uncaught Exception: 服务器配置错误：JWT 密钥无效 in C:\xampp\htdocs\jobpulse\server\lib\auth.php:23
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\api\auth.php(90): generateJWT('21', 'test12344@examp...')
+#1 C:\xampp\htdocs\jobpulse\server\index.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#3 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\lib\auth.php on line 23
+[19-May-2025 04:56:50 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 04:56:50 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 04:56:50 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test12344@example.com
+[19-May-2025 04:56:50 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12344@example.com' for key 'email'
+[19-May-2025 04:58:51 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 04:58:51 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 04:58:51 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test12344@example.com
+[19-May-2025 04:58:51 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test12344@example.com' for key 'email'
+[19-May-2025 05:01:52 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 05:01:52 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 05:01:52 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test12345@example.com
+[19-May-2025 05:01:52 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test12345@example.com
+[19-May-2025 05:01:52 Europe/Berlin] User inserted: {"user_id":"24","user_type":"jobseeker","email":"test12345@example.com","password":"$2y$10$LWtPL9HxNJ0OoLtDbVCiMO6i0vEIjAVZLeLHoW6cXe3B17uODOpm2","phone":null,"created_at":"2025-05-19 11:01:52","is_verified":"0"}
+[19-May-2025 05:01:52 Europe/Berlin] JWT_SECRET值: 未设置
+[19-May-2025 05:01:52 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 05:01:52 Europe/Berlin] 错误：JWT_SECRET 环境变量未设置或为空！
+[19-May-2025 05:01:52 Europe/Berlin] PHP Fatal error:  Uncaught Exception: 服务器配置错误：JWT 密钥无效 in C:\xampp\htdocs\jobpulse\server\lib\auth.php:26
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\api\auth.php(90): generateJWT('24', 'test12345@examp...')
+#1 C:\xampp\htdocs\jobpulse\server\index.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#3 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\lib\auth.php on line 26
+[19-May-2025 05:02:37 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 05:02:38 Europe/Berlin] JWT_SECRET值: 未设置
+[19-May-2025 05:02:38 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 05:02:38 Europe/Berlin] 错误：JWT_SECRET 环境变量未设置或为空！
+[19-May-2025 05:02:38 Europe/Berlin] PHP Fatal error:  Uncaught Exception: 服务器配置错误：JWT 密钥无效 in C:\xampp\htdocs\jobpulse\server\lib\auth.php:26
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\api\auth.php(150): generateJWT('16', 'test12343@examp...', Array)
+#1 C:\xampp\htdocs\jobpulse\server\index.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('login')
+#3 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\lib\auth.php on line 26
+[19-May-2025 05:05:54 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 05:05:54 Europe/Berlin] JWT_SECRET值: 未设置
+[19-May-2025 05:05:54 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 05:05:54 Europe/Berlin] 错误：JWT_SECRET 环境变量未设置或为空！
+[19-May-2025 05:05:54 Europe/Berlin] PHP Fatal error:  Uncaught Exception: 服务器配置错误：JWT 密钥无效 in C:\xampp\htdocs\jobpulse\server\lib\auth.php:26
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\api\auth.php(150): generateJWT('16', 'test12343@examp...', Array)
+#1 C:\xampp\htdocs\jobpulse\server\index.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('login')
+#3 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\lib\auth.php on line 26
+[19-May-2025 05:07:09 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 05:07:09 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 05:07:31 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 05:07:31 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 05:08:04 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 05:08:04 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 05:08:04 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: etest1234@example.com
+[19-May-2025 05:08:04 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: etest1234@example.com
+[19-May-2025 05:08:04 Europe/Berlin] User inserted: {"user_id":"25","user_type":"employer","email":"etest1234@example.com","password":"$2y$10$426P69lhF9OXt03AzCjx\/ekE7m\/MG6KxE59CNJJ7ckqxJbKfB5wCq","phone":null,"created_at":"2025-05-19 11:08:04","is_verified":"0"}
+[19-May-2025 05:08:04 Europe/Berlin] JWT_SECRET值: 未设置
+[19-May-2025 05:08:04 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 05:08:04 Europe/Berlin] 错误：JWT_SECRET 环境变量未设置或为空！
+[19-May-2025 05:08:04 Europe/Berlin] PHP Fatal error:  Uncaught Exception: 服务器配置错误：JWT 密钥无效 in C:\xampp\htdocs\jobpulse\server\lib\auth.php:26
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\api\auth.php(90): generateJWT('25', 'etest1234@examp...')
+#1 C:\xampp\htdocs\jobpulse\server\index.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('register')
+#3 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\lib\auth.php on line 26
+[19-May-2025 07:13:59 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 07:13:59 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 07:13:59 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: etest12341@example.com
+[19-May-2025 07:13:59 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: etest12341@example.com
+[19-May-2025 07:13:59 Europe/Berlin] User inserted: {"user_id":"26","user_type":"employer","email":"etest12341@example.com","password":"$2y$10$WAmNz4RszR6oEjwotMyOA.UYqMqnnDUKdbcSIAA09VjZVQzQYANli","phone":null,"created_at":"2025-05-19 13:13:59","is_verified":"0"}
+[19-May-2025 07:13:59 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 07:13:59 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 07:14:16 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 07:14:16 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 07:14:16 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 07:18:03 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 07:18:04 Europe/Berlin] JWT_SECRET值: 未设置
+[19-May-2025 07:18:04 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 07:18:04 Europe/Berlin] 错误：JWT_SECRET 环境变量未设置或为空！
+[19-May-2025 07:18:04 Europe/Berlin] PHP Fatal error:  Uncaught Exception: 服务器配置错误：JWT 密钥无效 in C:\xampp\htdocs\jobpulse\server\lib\auth.php:29
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\api\auth.php(150): generateJWT('16', 'test12343@examp...', Array)
+#1 C:\xampp\htdocs\jobpulse\server\index.php(34): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jobpulse\server\index.php(49): {closure}('login')
+#3 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\lib\auth.php on line 29
+[19-May-2025 07:19:32 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 07:19:32 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 07:19:32 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 07:45:52 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 07:45:52 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 07:45:52 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 07:45:54 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 07:45:54 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 07:45:54 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 09:51:32 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 09:51:32 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 09:51:32 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 10:08:48 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 10:08:48 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 10:08:48 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test12346@example.com
+[19-May-2025 10:08:48 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test12346@example.com
+[19-May-2025 10:08:48 Europe/Berlin] User inserted: {"user_id":"27","user_type":"jobseeker","email":"test12346@example.com","password":"$2y$10$kAvxCUWgOsy\/yqs1y4BNouRKH9PPvdqntApksX5Q9WOykMmdl1AHu","phone":null,"created_at":"2025-05-19 16:08:48","is_verified":"0"}
+[19-May-2025 10:08:48 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 10:08:48 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 10:21:18 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 10:21:18 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 10:21:18 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: etest12342@example.com
+[19-May-2025 10:21:18 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: etest12342@example.com
+[19-May-2025 10:21:18 Europe/Berlin] User inserted: {"user_id":"28","user_type":"employer","email":"etest12342@example.com","password":"$2y$10$MTL4SAwegIjVRpEREPMfFOksBod3S6nHC679FTHZe8F5U0zL07xjC","phone":null,"created_at":"2025-05-19 16:21:18","is_verified":"0"}
+[19-May-2025 10:21:18 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 10:21:18 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 10:22:56 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 10:22:56 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 10:22:56 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 10:23:30 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 10:23:43 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 10:25:02 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 10:25:37 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 10:25:39 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:43:12 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:44:05 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:46:59 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:51:30 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:51:31 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:51:31 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:51:31 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:51:31 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:54:33 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:54:53 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:55:43 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:55:43 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 13:55:43 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 13:55:56 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:55:56 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 13:55:56 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 13:56:07 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:56:07 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 13:56:07 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 13:56:30 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:56:30 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 13:56:30 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 13:56:52 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:57:07 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 13:57:07 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 13:57:07 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 14:00:28 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:01:02 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:01:35 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:01:35 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 14:01:35 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 14:02:08 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:02:32 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:02:42 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:02:54 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:02:54 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 14:02:54 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 14:06:26 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:06:27 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 14:06:27 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 14:06:58 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:07:37 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:07:37 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 14:07:37 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 14:15:41 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:15:41 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 14:15:41 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: etest12343@example.com
+[19-May-2025 14:15:41 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: etest12343@example.com
+[19-May-2025 14:15:41 Europe/Berlin] User inserted: {"user_id":"29","user_type":"employer","email":"etest12343@example.com","password":"$2y$10$SQ0sKFMo3Hgyzm58sn1bzOZCXwj\/aKs4RB8Ln\/5GpXZHNyXaorL9m","phone":null,"created_at":"2025-05-19 20:15:41","is_verified":"0"}
+[19-May-2025 14:15:41 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 14:15:41 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 14:30:28 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:30:28 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 14:30:28 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: etest12343@example.com
+[19-May-2025 14:30:28 Europe/Berlin] CRITICAL DB ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'etest12343@example.com' for key 'email'
+[19-May-2025 14:32:25 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:32:25 Europe/Berlin] DEBUG: Entered registration logic
+[19-May-2025 14:32:25 Europe/Berlin] DEBUG: code: 22 Attempting to insert user with email: test12342@example.com
+[19-May-2025 14:32:25 Europe/Berlin] DEBUG: code: 23 Attempting to insert user with email: test12342@example.com
+[19-May-2025 14:32:25 Europe/Berlin] User inserted: {"user_id":"31","user_type":"jobseeker","email":"test12342@example.com","password":"$2y$10$\/mFEGK7kpg7uTDC3B6Tk6e.vwukPCwF6hqGa8WaVgEEIoU985F.uC","phone":null,"created_at":"2025-05-19 20:32:25","is_verified":"0"}
+[19-May-2025 14:32:25 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 14:32:25 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+
+[19-May-2025 14:33:27 Europe/Berlin] Connected to database: jobpulse_db
+[19-May-2025 14:33:27 Europe/Berlin] JWT_SECRET值: 已设置
+[19-May-2025 14:33:27 Europe/Berlin] 当前环境变量: Array
+(
+    [JWT_SECRET] => your_secure_key_here
+    [DB_HOST] => localhost
+    [DB_NAME] => jobpulse_db
+    [DB_USER] => root
+    [DB_PASSWORD] => 
+)
+

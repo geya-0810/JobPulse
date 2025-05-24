@@ -1,0 +1,210 @@
+/* Applied.module.css */
+
+.appliedContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.pageTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.applyTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.applyTable thead {
+  background-color: #f8f8f8;
+}
+
+.applyTable th {
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.applyTable td {
+  padding: 1rem;
+  border-bottom: 1px solid #eaeaea;
+  vertical-align: middle;
+}
+
+.applyTable tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Status styles */
+.statusPending {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: #fef9c3;
+  color: #854d0e;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.statusInvited {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: #dcfce7;
+  color: #166534;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.statusRejected {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: #fecaca;
+  color: #b91c1c;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.statusCancelled {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: #e5e7eb;
+  color: #4b5563;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Button styles */
+.cancelButton, .detailButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.cancelButton {
+  background-color: #166534;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #14532d;
+}
+
+.detailButton {
+  background-color: #166534;
+  color: white;
+}
+
+.detailButton:hover {
+  background-color: #14532d;
+}
+
+.buttonIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.noAction {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* Empty state styles */
+.noApplications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.noAppIcon {
+  width: 3rem;
+  height: 3rem;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+}
+
+.browseJobsButton {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #166534;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.browseJobsButton:hover {
+  background-color: #14532d;
+}
+
+/* Application tips section */
+.applicationTips {
+  background-color: #f0f9ff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.applicationTips h3 {
+  color: #0369a1;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.applicationTips ul {
+  padding-left: 1.5rem;
+}
+
+.applicationTips li {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 1.5rem;
+  }
+  
+  .applyTable th, .applyTable td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .buttonIcon {
+    display: none;
+  }
+  
+  .cancelButton, .detailButton {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
