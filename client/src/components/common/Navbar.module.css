@@ -44,10 +44,26 @@
   display: flex;
   gap: 20px;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .navLinks li a {
   color: black;
+}
+
+/* components/common/Navbar.module.css */
+.logoutButton {
+  background-color: transparent;
+  border: 1px solid #ff4444;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto; /* 靠右对齐 */
+  transition: background 0.3s;
+}
+
+.logoutButton:hover {
+  background: #ff4646;
 }
 
 /* .dropdown {

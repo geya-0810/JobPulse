@@ -1,15 +1,18 @@
 // components/auth/Login.jsx
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from './../../context/AuthContext.js';
 import styles from "./auth.module.css";
 import axios from 'axios';
 
 const Login = () => {
+  const navigate = useNavigate();
+  const { login } = useContext(AuthContext);
   const [userType, setUserType] = useState("jobseeker");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate();
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,13 +28,12 @@ const Login = () => {
       });
 
       const data = await response.json();
-      if (!response.ok) throw new Error(data.error || "Login failed");
-
-      // 保存token并跳转
-      localStorage.setItem('token', data.token);
-      localStorage.setItem('userType', userType); // 保存用户类型
-      axios.defaults.headers.common['Authorization'] = `Bearer ${data.token}`; // 设置全局头
-      navigate(`/`);
+      if (response.ok) {
+        // 保存token并跳转
+        login(data.token, data.userType); //data.token, userType);  // 替换原来的localStorage.setItem
+        axios.defaults.headers.common['Authorization'] = `Bearer ${data.token}`; // 设置全局头
+        navigate(`/`);
+      } else {throw new Error(data.error || "Login failed");}
     } catch (err) {
       setError(err.message);
     }

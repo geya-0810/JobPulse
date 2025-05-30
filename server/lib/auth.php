@@ -20,8 +20,8 @@
         $secretKey = $_ENV['JWT_SECRET'];
     //    $secretKey = getenv('JWT_SECRET');
 
-        error_log("JWT_SECRET值: " . (is_string($secretKey) ? "已设置" : "未设置"));
-        error_log("当前环境变量: " . print_r($_ENV, true));
+        // error_log("JWT_SECRET值: " . (is_string($secretKey) ? "已设置" : "未设置"));
+        // error_log("当前环境变量: " . print_r($_ENV, true));
 
        // 确保 $secretKey 是一个字符串
        if (!is_string($secretKey) || empty($secretKey)) {
@@ -42,7 +42,8 @@
 
    function validateJWT($token) {
        try {
-           $secretKey = getenv('JWT_SECRET');
+            $secretKey = $_ENV['JWT_SECRET'];
+           //$secretKey = getenv('JWT_SECRET');
 
            // 再次确保 $secretKey 是一个字符串
            if (!is_string($secretKey) || empty($secretKey)) {

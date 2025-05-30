@@ -1,10 +1,13 @@
 // components/common/Navbar.jsx
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from './../../context/AuthContext.js';
 import styles from './Navbar.module.css';
 import logo from './../../jobpulselogo.png';
 
+const Navbar = () => {
+  const { isLoggedIn, userType, logout } = useContext(AuthContext);
 
-const Navbar = ({ isLoggedIn, userType }) => {
   return (
     <nav className={styles.navbar}>
       {/* Logo */}
@@ -21,7 +24,8 @@ const Navbar = ({ isLoggedIn, userType }) => {
         <ul className={styles.navLinks}>
         <li><Link to="/">HOME</Link></li>
         {isLoggedIn ? (
-          userType === 'employer' ? (
+          <>
+          {userType === 'employer' ? (
             <>
               <li><Link to="/post-recruitment">Post Recruitment</Link></li>
               {/* <div className={styles.dropdown}>
@@ -44,7 +48,9 @@ const Navbar = ({ isLoggedIn, userType }) => {
               {/*  </div>
                </div> */}
             </>
-          )
+          )}
+          <li><button onClick={logout} className={styles.logoutButton}>Log Out</button></li>
+          </>
         ) : (
           <>
             <li><Link to="/login">Post Recruitment</Link></li>

@@ -1,6 +1,8 @@
 // src/App.js
-import React from 'react';
+import { useState, React } from "react";
+// import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import NotFoundPage from './components/common/NotFoundPage';
@@ -21,10 +23,14 @@ import Profile from './components/jobseeker/Profile';
 import './App.css';
 
 function App() {
+  // const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('token') !== null);
+  // const [userType, setUserType] = useState(localStorage.getItem('userType') || null);
+
   return (
+    <AuthProvider>
     <Router>
       <div className="App">
-        <Navbar isLoggedIn={false} userType={null} />
+        <Navbar />
 
         <div className='maincontent-container'>
           <Routes>
@@ -48,6 +54,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </AuthProvider>
   );
 }
 
