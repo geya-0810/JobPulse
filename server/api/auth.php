@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . '/../logs/php_errors.log');
-// // server/api/auth.php
+// server/api/auth.php
 
 // 强制设置JSON响应头
 header("Content-Type: application/json; charset=UTF-8");
@@ -81,7 +81,7 @@ switch ($method) {
                     $token = generateJWT($user_id, $email); // Generate a JWT (You need your function)
                     $response = [
                         "success" => true,
-                        "user_id" => $user_id,
+                        "user_id" => $user_id,  //后期需要comment
                         "token" => $token  // Include the token in the response
                     ];
                     http_response_code(201); // 201 Created (more appropriate than 200)

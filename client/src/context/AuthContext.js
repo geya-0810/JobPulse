@@ -11,13 +11,13 @@ export const AuthProvider = ({ children }) => {
   const login = (token, userType) => {
     localStorage.setItem('token', token);
     localStorage.setItem('userType', userType);
+    axios.defaults.headers.common['Authorization'] = `Bearer ${token}`; // 设置全局头
     setIsLoggedIn(true);
     setUserType(userType);
   };
 
   const logout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('userType');
+    localStorage.clear();
     delete axios.defaults.headers.common['Authorization'];
     setIsLoggedIn(false);
     setUserType(null);

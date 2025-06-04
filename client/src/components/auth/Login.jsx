@@ -3,7 +3,6 @@ import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from './../../context/AuthContext.js';
 import styles from "./auth.module.css";
-import axios from 'axios';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -30,8 +29,7 @@ const Login = () => {
       const data = await response.json();
       if (response.ok) {
         // 保存token并跳转
-        login(data.token, data.userType); //data.token, userType);  // 替换原来的localStorage.setItem
-        axios.defaults.headers.common['Authorization'] = `Bearer ${data.token}`; // 设置全局头
+        login(data.token, data.user_type);  // 替换原来的localStorage.setItem
         navigate(`/`);
       } else {throw new Error(data.error || "Login failed");}
     } catch (err) {

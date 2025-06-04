@@ -24,7 +24,7 @@
   flex-direction: column;
   gap: 15px;
   /* 允许左侧列表独立滚动 */
-  max-height: calc(100vh - YOUR_HEADER_HEIGHT - YOUR_FOOTER_HEIGHT - 40px ); /* 限制最大高度 */
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
   overflow-y: auto; /* 当内容超出时显示滚动条 */
 }
 
@@ -141,7 +141,7 @@
   position: sticky; /* 使其在滚动时固定 */
   top: 24.5%; /* 距离顶部的距离，可以根据你的页眉高度调整 */
   /* 确保它不会超过可用高度，并与页脚保持距离 */
-  max-height: calc(100vh - YOUR_HEADER_HEIGHT - YOUR_FOOTER_HEIGHT - 40px - SEARCH_BAR_HEIGHT_IF_ANY - 20px); /* 20px 是 top 的值 */
+  max-height: calc(100vh - var(--header-height) - var(--footer-height) ); /*- 20px); /* 20px 是 top 的值 */
   overflow-y: auto; /* 如果内容意外地变多，允许滚动 */
 }
 
@@ -179,7 +179,7 @@
   min-height: 100vh; /* 可以保留一个最小高度 */
   position: sticky; /* 使其在滚动时固定 */
   top: 24.5%; /* 距离顶部的距离，可以根据你的页眉高度调整 */
-  max-height: 100vh/*calc(100vh - YOUR_HEADER_HEIGHT - YOUR_FOOTER_HEIGHT - 40px - SEARCH_BAR_HEIGHT_IF_ANY); /* 限制最大高度 */
+  max-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
 .companyProfile {

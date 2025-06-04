@@ -1,5 +1,5 @@
 // src/App.js
-import { useState, React } from "react";
+import React, { useState} from "react";
 // import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
@@ -11,6 +11,7 @@ import Home from './components/common/Home';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 
+import CampanyProfileC from './components/employer/CompanyProfile copy';
 import CampanyProfile from './components/employer/CompanyProfile';
 import PostRecruitment from './components/employer/PostRecruitment';
 import Application from './components/employer/Application';
@@ -40,6 +41,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Register />} />
 
+            <Route path="/cpc" element={<CampanyProfileC />} />
             <Route path="/company-profile" element={<CampanyProfile />} />
             <Route path="/post-recruitment" element={<PostRecruitment />} />
             <Route path="/applications" element={<Application />} />

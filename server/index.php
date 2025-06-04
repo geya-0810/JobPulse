@@ -1,10 +1,13 @@
 <?php
-error_log("API Request Received: " . $_SERVER['REQUEST_URI']);
 // server/index.php
 require_once __DIR__ . '/config/databaseconnect.php';
 require_once __DIR__ . '/lib/auth.php';
 require_once __DIR__ . '/../vendor/autoload.php';
 $router = new AltoRouter();
+
+error_log("API Request Received: " . $_SERVER['REQUEST_URI']);
+error_log("REQUEST_METHOD: " . $_SERVER['REQUEST_METHOD']);
+error_log("HTTP_ORIGIN: " . ($_SERVER['HTTP_ORIGIN'] ?? 'none'));
 
 // 允许的域名列表
 $allowedOrigins = [
@@ -33,37 +36,38 @@ if (preg_match('/^\/api\//', $_SERVER['REQUEST_URI'])) {
         $_GET['action'] = $action;
         require __DIR__ . '/api/auth.php';
     });
-    // $router->map('POST', '/api/auth', function() {
-    //     require __DIR__ . '/api/auth.php';
-    // });
+
     // $router->map('GET', '/api/test', function() {
     //     echo json_encode(['message' => 'Test endpoint']);
+    //     require __DIR__ . '/api/test_api.php';
     // });
 
     $router->map('GET', '/api/jobs/[*:id]?', function($id = null) {
         require __DIR__ . '/api/jobs.php';
     });
 
+    $router->map('GET', '/api/employer/profile', function() {
+        require __DIR__ . '/api/employer.php';
+    }, 'employer_profile_get');
+
+    $router->map('PUT', '/api/employer/profile', function() {
+        require __DIR__ . '/api/employer.php';
+    }, 'employer_profile_put');
+
+    $router->map('POST', '/api/upload', function() {
+        require __DIR__ . '/api/upload.php';
+    }, 'upload');
+
+
     $match = $router->match();
-    if ($match) {
+    if ($match) {// && is_callable($match['target'])) {
         call_user_func_array($match['target'], $match['params']);
     } else {
+        error_log("No route matched for: " . $_SERVER['REQUEST_URI']);
         http_response_code(404);
         echo json_encode(['error' => 'Endpoint not found1']);
     }
    
-    // $uri = str_replace('/api/', '', $_SERVER['REQUEST_URI']);
-    // switch ($uri) {
-    //     case 'auth':
-    //         require __DIR__ . '/api/auth.php';
-    //         break;
-    //     case 'jobs':
-    //         require __DIR__ . '/api/jobs.php';
-    //         break;
-    //     default:
-    //         http_response_code(404);
-    //         echo json_encode(['error' => 'Endpoint not found']);
-    // }
 } else {
     // 添加API路径排除
     if (preg_match('/^\/api\//', $_SERVER['REQUEST_URI'])) {

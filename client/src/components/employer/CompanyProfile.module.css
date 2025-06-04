@@ -141,6 +141,22 @@
   background-color: #0069d9;
 }
 
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .certButton {
   background-color: #6c757d;
   color: white;
@@ -196,30 +212,32 @@
 }
 
 .formGroup {
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* margin-bottom: 15px; */
 }
 
 .formGroup label {
-  display: block;
   font-size: 14px;
-  color: #495057;
-  margin-bottom: 5px;
+  color: #555;
+  margin: 0;
 }
 
 .formGroup input,
 .formGroup select,
 .formGroup textarea {
   width: 100%;
-  padding: 8px 12px;
+  padding: 8px;
   border: 1px solid #ced4da;
   border-radius: 4px;
-  font-size: 16px;
-  color: #495057;
+  font-size: 0.9rem;
+  color: black;
+  box-sizing: border-box;
 }
 
 .formGroup textarea {
-  resize: vertical;
-  min-height: 80px;
+  resize: none; 
 }
 
 /* About section and other company sections */
@@ -452,7 +470,7 @@
 
   .companyDetails,
   .companyDetailsEdit {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr, 1fr;
   }
 }
 

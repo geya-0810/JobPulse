@@ -766,3 +766,1133 @@ Stack trace:
 [25-May-2025 18:50:06 Europe/Berlin] Connected to database: jobpulse_db
 [25-May-2025 19:29:09 Europe/Berlin] Connected to database: jobpulse_db
 [25-May-2025 19:29:58 Europe/Berlin] Connected to database: jobpulse_db
+[30-May-2025 14:09:38 Europe/Berlin] Connected to database: jobpulse_db
+[30-May-2025 14:13:31 Europe/Berlin] Connected to database: jobpulse_db
+[30-May-2025 14:59:05 Europe/Berlin] Connected to database: jobpulse_db
+[30-May-2025 14:59:13 Europe/Berlin] Connected to database: jobpulse_db
+[30-May-2025 15:01:18 Europe/Berlin] Connected to database: jobpulse_db
+[30-May-2025 15:11:51 Europe/Berlin] Connected to database: jobpulse_db
+[30-May-2025 15:11:57 Europe/Berlin] Connected to database: jobpulse_db
+[30-May-2025 15:14:39 Europe/Berlin] Connected to database: jobpulse_db
+[30-May-2025 15:17:31 Europe/Berlin] Connected to database: jobpulse_db
+[02-Jun-2025 19:06:20 Europe/Berlin] API Request Received: /api/auth/login
+[02-Jun-2025 19:06:20 Europe/Berlin] Connected to database: jobpulse_db
+[02-Jun-2025 20:45:35 Europe/Berlin] API Request Received: /api/auth/login
+[02-Jun-2025 20:45:35 Europe/Berlin] Connected to database: jobpulse_db
+[02-Jun-2025 21:28:38 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 21:32:43 Europe/Berlin] API Request Received: /api/auth/login
+[02-Jun-2025 21:32:43 Europe/Berlin] Connected to database: jobpulse_db
+[02-Jun-2025 21:37:34 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 21:37:34 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.e30.f_kQXH3tWrpSki7-GQr53loDxhmrNy9bfmf6meNT5Qk
+[02-Jun-2025 21:37:34 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 21:37:34 Europe/Berlin] JWT validation failed
+[02-Jun-2025 21:40:14 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 21:40:14 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.e30.4cDgrUe71RzeuLLr_gYiSKOcMtDOtiCdfbiS9RQvWcw
+[02-Jun-2025 21:40:14 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 21:40:14 Europe/Berlin] JWT validation failed
+[02-Jun-2025 21:45:10 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 21:45:10 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.e30.4cDgrUe71RzeuLLr_gYiSKOcMtDOtiCdfbiS9RQvWcw
+[02-Jun-2025 21:45:10 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 21:45:10 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:01:01 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:01:01 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:01:01 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:01:01 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.e30.4cDgrUe71RzeuLLr_gYiSKOcMtDOtiCdfbiS9RQvWcw
+[02-Jun-2025 22:01:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference in C:\xampp\htdocs\jobpulse\server\lib\auth.php:55
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\api\employer.php(25): validateJWT('eyJhbGciOiJIUzI...')
+#1 C:\xampp\htdocs\jobpulse\server\index.php(47): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jobpulse\server\index.php(60): {closure}()
+#3 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\lib\auth.php on line 55
+[02-Jun-2025 22:02:49 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:02:49 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:02:49 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:02:49 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.e30.4cDgrUe71RzeuLLr_gYiSKOcMtDOtiCdfbiS9RQvWcw
+[02-Jun-2025 22:02:49 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 22:02:49 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:20:35 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:20:35 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:20:35 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:20:35 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.e30.4cDgrUe71RzeuLLr_gYiSKOcMtDOtiCdfbiS9RQvWcw
+[02-Jun-2025 22:20:35 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 22:20:35 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:22:05 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:22:05 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:22:05 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:22:05 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTI3NjMsImV4cCI6MTc0ODg5NjM2Mywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.Ib-7iqMMI8vi1pf6TDrhYZUD-5lgLAaXx7Ecx5tkV0I
+[02-Jun-2025 22:22:05 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 22:22:05 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:32:02 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:32:02 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:32:02 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:32:32 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:32:32 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:32:32 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:32:42 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:32:42 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:32:42 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:35:13 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:35:13 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:35:13 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:35:13 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTI3NjMsImV4cCI6MTc0ODg5NjM2Mywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.gsdv04RFqA-vTFArqnVxIfIH6OgM5zJ0vLlK6B5lOUo
+[02-Jun-2025 22:35:13 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 22:35:13 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:36:20 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:36:20 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:36:20 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:36:20 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTI3NjMsImV4cCI6MTc0ODg5NjM2Mywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.fgObHpDwt3rt33YJZrBHE-pNM1OOVosVBr-RkOvA5TU
+[02-Jun-2025 22:36:20 Europe/Berlin] JWT验证失败: Expired token
+[02-Jun-2025 22:36:20 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:36:29 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:36:29 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:36:29 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:36:29 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTI3NjMsImV4cCI6MTc0ODg5NjM2Mywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.JIPewDDxwjJxh0Rgwnw0X-Bd3PNVkeg8P0p-arSZAsY
+[02-Jun-2025 22:36:29 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 22:36:29 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:36:32 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:36:32 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:36:32 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:36:32 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTI3NjMsImV4cCI6MTc0ODg5NjM2Mywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.whhi46BIw-ocfyqubQdcc1Bnmo2hZiRF4AhNcYfACqM
+[02-Jun-2025 22:36:32 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 22:36:32 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:36:56 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:36:56 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:36:56 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:36:56 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTI3NjMsImV4cCI6MTc0ODg5NjM2Mywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.fgObHpDwt3rt33YJZrBHE-pNM1OOVosVBr-RkOvA5TU
+[02-Jun-2025 22:36:56 Europe/Berlin] JWT验证失败: Expired token
+[02-Jun-2025 22:36:56 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:36:59 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:36:59 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:36:59 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:36:59 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTI3NjMsImV4cCI6MTc0ODg5NjM2Mywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.whhi46BIw-ocfyqubQdcc1Bnmo2hZiRF4AhNcYfACqM
+[02-Jun-2025 22:36:59 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 22:36:59 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:41:51 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:41:51 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:41:51 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:41:51 Europe/Berlin] Received token: eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTI3NjMsImV4cCI6MTc0ODg5NjM2Mywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.whhi46BIw-ocfyqubQdcc1Bnmo2hZiRF4AhNcYfACqM
+[02-Jun-2025 22:41:51 Europe/Berlin] JWT验证失败: Signature verification failed
+[02-Jun-2025 22:41:51 Europe/Berlin] JWT validation failed
+[02-Jun-2025 22:44:07 Europe/Berlin] API Request Received: /api/test
+[02-Jun-2025 22:46:30 Europe/Berlin] API Request Received: /api/test
+[02-Jun-2025 22:46:43 Europe/Berlin] API Request Received: /api/test
+[02-Jun-2025 22:47:32 Europe/Berlin] API Request Received: /api/auth/login
+[02-Jun-2025 22:47:32 Europe/Berlin] Connected to database: jobpulse_db
+[02-Jun-2025 22:49:29 Europe/Berlin] API Request Received: /api/test
+[02-Jun-2025 22:49:50 Europe/Berlin] API Request Received: /api/test
+[02-Jun-2025 22:50:21 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:50:21 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:50:21 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:50:21 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTcyNTIsImV4cCI6MTc0ODkwMDg1Miwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.tFb80Ije50sehbrFt64A5o5ADeiRjsS49pY50gln5E8
+[02-Jun-2025 22:50:21 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[02-Jun-2025 22:50:21 Europe/Berlin] User ID: 28, Role: employer
+[02-Jun-2025 22:50:21 Europe/Berlin] PHP Warning:  Undefined variable $dbconnect in C:\xampp\htdocs\jobpulse\server\api\employer.php on line 51
+[02-Jun-2025 22:50:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\jobpulse\server\api\employer.php:58
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(48): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(61): {closure}()
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\employer.php on line 58
+[02-Jun-2025 22:52:36 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 22:52:36 Europe/Berlin] Connected to database: jobpulse_db
+[02-Jun-2025 22:52:36 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 22:52:36 Europe/Berlin] Request method: GET
+[02-Jun-2025 22:52:36 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTcyNTIsImV4cCI6MTc0ODkwMDg1Miwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.tFb80Ije50sehbrFt64A5o5ADeiRjsS49pY50gln5E8
+[02-Jun-2025 22:52:36 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[02-Jun-2025 22:52:36 Europe/Berlin] User ID: 28, Role: employer
+[02-Jun-2025 22:52:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOStatement::bind_param() in C:\xampp\htdocs\jobpulse\server\api\employer.php:69
+Stack trace:
+#0 C:\xampp\htdocs\jobpulse\server\index.php(48): require()
+#1 C:\xampp\htdocs\jobpulse\server\index.php(61): {closure}()
+#2 {main}
+  thrown in C:\xampp\htdocs\jobpulse\server\api\employer.php on line 69
+[02-Jun-2025 23:00:25 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 23:00:25 Europe/Berlin] Connected to database: jobpulse_db
+[02-Jun-2025 23:00:25 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 23:00:25 Europe/Berlin] Request method: GET
+[02-Jun-2025 23:00:25 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTcyNTIsImV4cCI6MTc0ODkwMDg1Miwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.tFb80Ije50sehbrFt64A5o5ADeiRjsS49pY50gln5E8
+[02-Jun-2025 23:00:25 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[02-Jun-2025 23:00:25 Europe/Berlin] User ID: 28, Role: employer
+[02-Jun-2025 23:00:25 Europe/Berlin] Executing profile query for user: 28
+[02-Jun-2025 23:00:57 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 23:00:57 Europe/Berlin] Connected to database: jobpulse_db
+[02-Jun-2025 23:00:57 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 23:00:57 Europe/Berlin] Request method: GET
+[02-Jun-2025 23:00:57 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTcyNTIsImV4cCI6MTc0ODkwMDg1Miwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.tFb80Ije50sehbrFt64A5o5ADeiRjsS49pY50gln5E8
+[02-Jun-2025 23:00:57 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[02-Jun-2025 23:00:57 Europe/Berlin] User ID: 28, Role: employer
+[02-Jun-2025 23:00:57 Europe/Berlin] Executing profile query for user: 28
+[02-Jun-2025 23:51:07 Europe/Berlin] API Request Received: /api/employer/profile
+[02-Jun-2025 23:51:07 Europe/Berlin] REQUEST_METHOD: GET
+[02-Jun-2025 23:51:07 Europe/Berlin] HTTP_ORIGIN: none
+[02-Jun-2025 23:51:07 Europe/Berlin] Connected to database: jobpulse_db
+[02-Jun-2025 23:51:07 Europe/Berlin] API: employer.php accessed
+[02-Jun-2025 23:51:07 Europe/Berlin] Request method: GET
+[02-Jun-2025 23:51:07 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg4OTcyNTIsImV4cCI6MTc0ODkwMDg1Miwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.tFb80Ije50sehbrFt64A5o5ADeiRjsS49pY50gln5E8
+[02-Jun-2025 23:51:07 Europe/Berlin] JWT验证失败: Expired token
+[02-Jun-2025 23:51:07 Europe/Berlin] JWT validation failed
+[03-Jun-2025 00:00:52 Europe/Berlin] API Request Received: /api/auth/login
+[03-Jun-2025 00:00:52 Europe/Berlin] REQUEST_METHOD: POST
+[03-Jun-2025 00:00:52 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 00:00:52 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 00:01:29 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 00:01:29 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 00:01:29 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 00:01:29 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 00:01:29 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 00:01:29 Europe/Berlin] Request method: GET
+[03-Jun-2025 00:01:29 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5MDE2NTIsImV4cCI6MTc0ODkwNTI1Miwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.qmLIyYYoHGH1piQidLv1G72ayu8Xxra7zEbjPvj-Y_0
+[03-Jun-2025 00:01:29 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 00:01:29 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 00:01:29 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 00:16:28 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 00:16:28 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 00:16:28 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 00:16:28 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 00:16:28 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 00:16:28 Europe/Berlin] Request method: GET
+[03-Jun-2025 00:16:28 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5MDE2NTIsImV4cCI6MTc0ODkwNTI1Miwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.qmLIyYYoHGH1piQidLv1G72ayu8Xxra7zEbjPvj-Y_0
+[03-Jun-2025 00:16:28 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 00:16:28 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 00:16:28 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 12:13:20 Europe/Berlin] API Request Received: /api/auth/login
+[03-Jun-2025 12:13:20 Europe/Berlin] REQUEST_METHOD: POST
+[03-Jun-2025 12:13:20 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:13:20 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:14:40 Europe/Berlin] API Request Received: /api/auth/login
+[03-Jun-2025 12:14:40 Europe/Berlin] REQUEST_METHOD: POST
+[03-Jun-2025 12:14:40 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:14:40 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:15:11 Europe/Berlin] API Request Received: /api/auth/login
+[03-Jun-2025 12:15:11 Europe/Berlin] REQUEST_METHOD: POST
+[03-Jun-2025 12:15:11 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:15:11 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:16:10 Europe/Berlin] API Request Received: /api/auth/login
+[03-Jun-2025 12:16:10 Europe/Berlin] REQUEST_METHOD: POST
+[03-Jun-2025 12:16:10 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:16:10 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:16:28 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:16:28 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:16:28 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:16:28 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:16:28 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:16:28 Europe/Berlin] Request method: GET
+[03-Jun-2025 12:16:28 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU3NzAsImV4cCI6MTc0ODk0OTM3MCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.ACOhcoVhSBlADi1DdCCIOZDRHDFIB5cjwgjAEN8vAWY
+[03-Jun-2025 12:16:28 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:16:28 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:16:28 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 12:17:09 Europe/Berlin] API Request Received: /api/auth/login
+[03-Jun-2025 12:17:09 Europe/Berlin] REQUEST_METHOD: POST
+[03-Jun-2025 12:17:09 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 12:17:09 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:17:12 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:17:12 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:17:12 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:17:12 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:17:12 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:17:12 Europe/Berlin] Request method: GET
+[03-Jun-2025 12:17:12 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:17:12 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:17:12 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:17:12 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 12:19:34 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:19:34 Europe/Berlin] REQUEST_METHOD: PUT
+[03-Jun-2025 12:19:34 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 12:19:34 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:19:34 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:19:34 Europe/Berlin] Request method: PUT
+[03-Jun-2025 12:19:34 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:19:34 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:19:34 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:19:34 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:19:34 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:19:34 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:19:34 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:19:34 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:19:34 Europe/Berlin] Request method: GET
+[03-Jun-2025 12:19:34 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:19:34 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:19:34 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:19:34 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 12:21:20 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:21:20 Europe/Berlin] REQUEST_METHOD: PUT
+[03-Jun-2025 12:21:20 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 12:21:20 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:21:20 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:21:20 Europe/Berlin] Request method: PUT
+[03-Jun-2025 12:21:20 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:21:20 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:21:20 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:21:20 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:21:20 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:21:20 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:21:20 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:21:20 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:21:20 Europe/Berlin] Request method: GET
+[03-Jun-2025 12:21:20 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:21:20 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:21:20 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:21:20 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 12:21:41 Europe/Berlin] API Request Received: /api/placeholder/50/50
+[03-Jun-2025 12:21:41 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:21:41 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:21:41 Europe/Berlin] No route matched for: /api/placeholder/50/50
+[03-Jun-2025 12:42:56 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:42:56 Europe/Berlin] REQUEST_METHOD: PUT
+[03-Jun-2025 12:42:56 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 12:42:56 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:42:56 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:42:56 Europe/Berlin] Request method: PUT
+[03-Jun-2025 12:42:56 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:42:56 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:42:56 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:42:56 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:42:56 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:42:56 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:42:56 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:42:56 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:42:56 Europe/Berlin] Request method: GET
+[03-Jun-2025 12:42:56 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:42:56 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:42:56 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:42:56 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 12:43:08 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:43:08 Europe/Berlin] REQUEST_METHOD: PUT
+[03-Jun-2025 12:43:08 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 12:43:08 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:43:08 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:43:08 Europe/Berlin] Request method: PUT
+[03-Jun-2025 12:43:08 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:43:08 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:43:08 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:43:08 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:43:08 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:43:08 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:43:08 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:43:08 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:43:08 Europe/Berlin] Request method: GET
+[03-Jun-2025 12:43:08 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:43:08 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:43:08 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:43:08 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 12:48:54 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:48:54 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:48:54 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:48:54 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:48:54 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:48:54 Europe/Berlin] Request method: GET
+[03-Jun-2025 12:48:54 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:48:54 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:48:54 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:48:54 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 12:48:54 Europe/Berlin] API Request Received: /api/placeholder/50/50
+[03-Jun-2025 12:48:54 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:48:54 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:48:54 Europe/Berlin] No route matched for: /api/placeholder/50/50
+[03-Jun-2025 12:51:06 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 12:51:06 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:51:06 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:51:06 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 12:51:06 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 12:51:06 Europe/Berlin] Request method: GET
+[03-Jun-2025 12:51:06 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 12:51:06 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 12:51:06 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 12:51:06 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 12:51:06 Europe/Berlin] API Request Received: /api/placeholder/50/50
+[03-Jun-2025 12:51:06 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 12:51:06 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 12:51:06 Europe/Berlin] No route matched for: /api/placeholder/50/50
+[03-Jun-2025 13:03:13 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 13:03:13 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 13:03:13 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 13:03:13 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 13:03:13 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 13:03:13 Europe/Berlin] Request method: GET
+[03-Jun-2025 13:03:13 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NDU4MjksImV4cCI6MTc0ODk0OTQyOSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.3uv_5eoJ9pgVhNCxa2OcD6c7kv_YIZAs5xFY-5zhpr4
+[03-Jun-2025 13:03:13 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 13:03:13 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 13:03:13 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 13:03:13 Europe/Berlin] API Request Received: /api/placeholder/50/50
+[03-Jun-2025 13:03:13 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 13:03:13 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 13:03:13 Europe/Berlin] No route matched for: /api/placeholder/50/50
+[03-Jun-2025 13:03:36 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 13:03:36 Europe/Berlin] REQUEST_METHOD: PUT
+[03-Jun-2025 13:03:36 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 13:03:36 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 13:03:36 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 13:03:36 Europe/Berlin] Request method: PUT
+[03-Jun-2025 14:43:32 Europe/Berlin] API Request Received: /api/auth/login
+[03-Jun-2025 14:43:32 Europe/Berlin] REQUEST_METHOD: POST
+[03-Jun-2025 14:43:32 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 14:43:32 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 14:43:35 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 14:43:35 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 14:43:35 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 14:43:35 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 14:43:35 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 14:43:35 Europe/Berlin] Request method: GET
+[03-Jun-2025 14:43:35 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NTQ2MTIsImV4cCI6MTc0ODk2MTgxMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.jCUDO7mhyjp8kdgI8muRO2CoXy4cFCxHj83-wXymor4
+[03-Jun-2025 14:43:35 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 14:43:35 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 14:43:35 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 14:43:35 Europe/Berlin] API Request Received: /api/placeholder/50/50
+[03-Jun-2025 14:43:35 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 14:43:35 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 14:43:35 Europe/Berlin] No route matched for: /api/placeholder/50/50
+[03-Jun-2025 16:03:47 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 16:03:47 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 16:03:47 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 16:03:47 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 16:03:47 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 16:03:47 Europe/Berlin] Request method: GET
+[03-Jun-2025 16:03:47 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NTQ2MTIsImV4cCI6MTc0ODk2MTgxMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.jCUDO7mhyjp8kdgI8muRO2CoXy4cFCxHj83-wXymor4
+[03-Jun-2025 16:03:47 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 16:03:47 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 16:03:47 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 16:03:47 Europe/Berlin] API Request Received: /api/placeholder/50/50
+[03-Jun-2025 16:03:47 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 16:03:47 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 16:03:47 Europe/Berlin] No route matched for: /api/placeholder/50/50
+[03-Jun-2025 21:57:16 Europe/Berlin] API Request Received: /api/auth/login
+[03-Jun-2025 21:57:16 Europe/Berlin] REQUEST_METHOD: POST
+[03-Jun-2025 21:57:16 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 21:57:16 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 21:57:17 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 21:57:17 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 21:57:17 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 21:57:17 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 21:57:17 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 21:57:17 Europe/Berlin] Request method: GET
+[03-Jun-2025 21:57:17 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5ODA2MzYsImV4cCI6MTc0ODk5MDYzNiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.YzhBvBsotMvap6Lb5SimtqldzPdP8XeVSbf0Kk3KWxE
+[03-Jun-2025 21:57:17 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 21:57:17 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 21:57:17 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 21:57:23 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 21:57:23 Europe/Berlin] REQUEST_METHOD: PUT
+[03-Jun-2025 21:57:23 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 21:57:23 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 21:57:23 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 21:57:23 Europe/Berlin] Request method: PUT
+[03-Jun-2025 21:57:23 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5ODA2MzYsImV4cCI6MTc0ODk5MDYzNiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.YzhBvBsotMvap6Lb5SimtqldzPdP8XeVSbf0Kk3KWxE
+[03-Jun-2025 21:57:23 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 21:57:23 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 21:57:23 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name WHERE user_id = :user_id
+[03-Jun-2025 21:57:23 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest12342
+    [:user_id] => 28
+)
+
+[03-Jun-2025 21:57:23 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 21:57:23 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 21:57:23 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 21:57:23 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 21:57:23 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 21:57:23 Europe/Berlin] Request method: GET
+[03-Jun-2025 21:57:23 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5ODA2MzYsImV4cCI6MTc0ODk5MDYzNiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.YzhBvBsotMvap6Lb5SimtqldzPdP8XeVSbf0Kk3KWxE
+[03-Jun-2025 21:57:23 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 21:57:23 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 21:57:23 Europe/Berlin] Executing profile query for user: 28
+[03-Jun-2025 21:58:35 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 21:58:35 Europe/Berlin] REQUEST_METHOD: PUT
+[03-Jun-2025 21:58:35 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[03-Jun-2025 21:58:35 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 21:58:35 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 21:58:35 Europe/Berlin] Request method: PUT
+[03-Jun-2025 21:58:35 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5ODA2MzYsImV4cCI6MTc0ODk5MDYzNiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.YzhBvBsotMvap6Lb5SimtqldzPdP8XeVSbf0Kk3KWxE
+[03-Jun-2025 21:58:35 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 21:58:35 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 21:58:35 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, company_phone = :company_phone, company_address = :company_address, website = :website WHERE user_id = :user_id
+[03-Jun-2025 21:58:35 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => e
+    [:website] => etest.com
+    [:user_id] => 28
+)
+
+[03-Jun-2025 21:58:35 Europe/Berlin] API Request Received: /api/employer/profile
+[03-Jun-2025 21:58:35 Europe/Berlin] REQUEST_METHOD: GET
+[03-Jun-2025 21:58:35 Europe/Berlin] HTTP_ORIGIN: none
+[03-Jun-2025 21:58:35 Europe/Berlin] Connected to database: jobpulse_db
+[03-Jun-2025 21:58:35 Europe/Berlin] API: employer.php accessed
+[03-Jun-2025 21:58:35 Europe/Berlin] Request method: GET
+[03-Jun-2025 21:58:35 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5ODA2MzYsImV4cCI6MTc0ODk5MDYzNiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.YzhBvBsotMvap6Lb5SimtqldzPdP8XeVSbf0Kk3KWxE
+[03-Jun-2025 21:58:35 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[03-Jun-2025 21:58:35 Europe/Berlin] User ID: 28, Role: employer
+[03-Jun-2025 21:58:35 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 14:12:17 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:12:17 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:12:17 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:12:17 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:12:17 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:12:17 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:12:17 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDg5NTQ2MTIsImV4cCI6MTc0ODk2MTgxMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.jCUDO7mhyjp8kdgI8muRO2CoXy4cFCxHj83-wXymor4
+[04-Jun-2025 14:12:17 Europe/Berlin] JWT验证失败: Expired token
+[04-Jun-2025 14:12:17 Europe/Berlin] JWT validation failed
+[04-Jun-2025 14:12:51 Europe/Berlin] API Request Received: /api/auth/login
+[04-Jun-2025 14:12:51 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 14:12:51 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 14:12:51 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:12:53 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:12:53 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:12:53 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:12:53 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:12:53 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:12:53 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:12:53 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzkxNzEsImV4cCI6MTc0OTA0OTE3MSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.MTS_Z7Ux5zsdJkQQW1tJjPjp1HdXBHXvDdaqMUq2isY
+[04-Jun-2025 14:12:53 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:12:53 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:12:53 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 14:17:50 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:17:50 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 14:17:50 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 14:17:50 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:17:50 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:17:50 Europe/Berlin] Request method: PUT
+[04-Jun-2025 14:17:50 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzkxNzEsImV4cCI6MTc0OTA0OTE3MSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.MTS_Z7Ux5zsdJkQQW1tJjPjp1HdXBHXvDdaqMUq2isY
+[04-Jun-2025 14:17:50 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:17:50 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:17:50 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, company_phone = :company_phone, company_address = :company_address, website = :website WHERE user_id = :user_id
+[04-Jun-2025 14:17:50 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => et
+    [:website] => etest.com
+    [:user_id] => 28
+)
+
+[04-Jun-2025 14:17:50 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:17:50 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:17:50 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:17:50 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:17:50 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:17:50 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:17:50 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzkxNzEsImV4cCI6MTc0OTA0OTE3MSwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.MTS_Z7Ux5zsdJkQQW1tJjPjp1HdXBHXvDdaqMUq2isY
+[04-Jun-2025 14:17:50 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:17:50 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:17:50 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 14:18:47 Europe/Berlin] API Request Received: /api/auth/login
+[04-Jun-2025 14:18:47 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 14:18:47 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 14:18:47 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:18:52 Europe/Berlin] API Request Received: /api/auth/login
+[04-Jun-2025 14:18:52 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 14:18:52 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 14:18:52 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:18:54 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:18:54 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:18:54 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:18:54 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:18:54 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:18:54 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:18:54 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:18:54 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:18:54 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:18:54 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 14:19:21 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 14:19:21 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 14:19:21 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 14:19:21 Europe/Berlin] No route matched for: /api/upload
+[04-Jun-2025 14:19:26 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:19:26 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:19:26 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:19:26 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:19:26 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:19:26 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:19:26 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:19:26 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:19:26 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:19:26 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 14:19:35 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 14:19:35 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 14:19:35 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 14:19:35 Europe/Berlin] No route matched for: /api/upload
+[04-Jun-2025 14:19:37 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:19:37 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:19:37 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:19:37 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:19:37 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:19:37 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:19:37 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:19:37 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:19:37 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:19:37 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 14:21:17 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:21:17 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 14:21:17 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 14:21:17 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:21:17 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:21:17 Europe/Berlin] Request method: PUT
+[04-Jun-2025 14:21:17 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:21:17 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:21:17 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:21:17 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, company_phone = :company_phone, company_address = :company_address, website = :website WHERE user_id = :user_id
+[04-Jun-2025 14:21:17 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => et
+    [:website] => etest.com
+    [:user_id] => 28
+)
+
+[04-Jun-2025 14:21:17 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:21:17 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:21:17 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:21:17 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:21:17 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:21:17 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:21:17 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:21:17 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:21:17 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:21:17 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 14:22:09 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:22:09 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 14:22:09 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 14:22:09 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:22:09 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:22:09 Europe/Berlin] Request method: PUT
+[04-Jun-2025 14:22:09 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:22:09 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:22:09 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:22:09 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, company_phone = :company_phone, company_address = :company_address, website = :website WHERE user_id = :user_id
+[04-Jun-2025 14:22:09 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => et
+    [:website] => etest.com
+    [:user_id] => 28
+)
+
+[04-Jun-2025 14:22:09 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:22:09 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:22:09 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:22:09 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:22:09 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:22:09 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:22:09 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:22:09 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:22:09 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:22:09 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 14:41:21 Europe/Berlin] API Request Received: /api/placeholder/50/50
+[04-Jun-2025 14:41:21 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:41:21 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:41:21 Europe/Berlin] No route matched for: /api/placeholder/50/50
+[04-Jun-2025 14:45:08 Europe/Berlin] API Request Received: /api/placeholder/50/50
+[04-Jun-2025 14:45:08 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:45:08 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:45:08 Europe/Berlin] No route matched for: /api/placeholder/50/50
+[04-Jun-2025 14:55:23 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:55:23 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:55:23 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:55:23 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:55:23 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:55:23 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:55:23 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:55:23 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:55:23 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:55:23 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 14:57:19 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:57:19 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 14:57:19 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 14:57:19 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:57:19 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:57:19 Europe/Berlin] Request method: PUT
+[04-Jun-2025 14:57:19 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:57:19 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:57:19 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:57:19 Europe/Berlin] SQL: UPDATE Employer SET company_phone = :company_phone, company_address = :company_address, website = :website WHERE user_id = :user_id
+[04-Jun-2025 14:57:19 Europe/Berlin] Params: Array
+(
+    [:company_phone] => 12342
+    [:company_address] => etest
+    [:website] => etest.com
+    [:user_id] => 28
+)
+
+[04-Jun-2025 14:57:19 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:57:19 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:57:19 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:57:19 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:57:19 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:57:19 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:57:19 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:57:19 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:57:19 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:57:19 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 14:59:11 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:59:11 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 14:59:11 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 14:59:11 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:59:11 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:59:11 Europe/Berlin] Request method: PUT
+[04-Jun-2025 14:59:11 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:59:11 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:59:11 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:59:11 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, registration_id = :registration_id, company_phone = :company_phone, company_address = :company_address, website = :website, industry_type = :industry_type, company_size = :company_size, founded_year = :founded_year, company_description = :company_description WHERE user_id = :user_id
+[04-Jun-2025 14:59:11 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest2
+    [:registration_id] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => etest
+    [:website] => etest.com
+    [:industry_type] => testing
+    [:company_size] => 501-1000 employees
+    [:founded_year] => 2025
+    [:company_description] => hi, here is etest. our job is help our customer to test any thing he want.
+    [:user_id] => 28
+)
+
+[04-Jun-2025 14:59:11 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 14:59:11 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 14:59:11 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 14:59:11 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 14:59:11 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 14:59:11 Europe/Berlin] Request method: GET
+[04-Jun-2025 14:59:11 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 14:59:11 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 14:59:11 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 14:59:11 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 17:29:55 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 17:29:55 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 17:29:55 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 17:29:56 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:29:56 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 17:29:56 Europe/Berlin] Request method: GET
+[04-Jun-2025 17:29:56 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwMzk1MzIsImV4cCI6MTc0OTA0OTUzMiwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.zU97_6fUk0-QzTTImJ2PqEyQK4wRIzLVtJnDT5mxM5o
+[04-Jun-2025 17:29:56 Europe/Berlin] JWT验证失败: Expired token
+[04-Jun-2025 17:29:56 Europe/Berlin] JWT validation failed
+[04-Jun-2025 17:30:18 Europe/Berlin] API Request Received: /api/auth/login
+[04-Jun-2025 17:30:18 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 17:30:18 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 17:30:19 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:30:24 Europe/Berlin] API Request Received: /api/auth/login
+[04-Jun-2025 17:30:24 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 17:30:24 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 17:30:24 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:30:33 Europe/Berlin] API Request Received: /api/auth/login
+[04-Jun-2025 17:30:33 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 17:30:33 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 17:30:33 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:30:35 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 17:30:35 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 17:30:35 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 17:30:35 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:30:35 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 17:30:35 Europe/Berlin] Request method: GET
+[04-Jun-2025 17:30:35 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTEwMzMsImV4cCI6MTc0OTA2MTAzMywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.kE29K1Zbc6alU4K104fERrrDbpTNjOvLYNRtTone9HI
+[04-Jun-2025 17:30:35 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 17:30:35 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 17:30:35 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 17:30:49 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 17:30:49 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 17:30:49 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 17:30:49 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:30:49 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 17:30:49 Europe/Berlin] Request method: PUT
+[04-Jun-2025 17:30:49 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTEwMzMsImV4cCI6MTc0OTA2MTAzMywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.kE29K1Zbc6alU4K104fERrrDbpTNjOvLYNRtTone9HI
+[04-Jun-2025 17:30:49 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 17:30:49 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 17:30:49 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, registration_id = :registration_id, company_phone = :company_phone, company_address = :company_address, website = :website, industry_type = :industry_type, company_size = :company_size, founded_year = :founded_year, company_description = :company_description WHERE user_id = :user_id
+[04-Jun-2025 17:30:49 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest2
+    [:registration_id] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => etest
+    [:website] => etest.com
+    [:industry_type] => testing
+    [:company_size] => 501-1000 employees
+    [:founded_year] => 2025
+    [:company_description] => hi, here is etest. our job is help our customer to test any thing he want.
+    [:user_id] => 28
+)
+
+[04-Jun-2025 17:30:49 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 17:30:49 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 17:30:49 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 17:30:49 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:30:49 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 17:30:49 Europe/Berlin] Request method: GET
+[04-Jun-2025 17:30:49 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTEwMzMsImV4cCI6MTc0OTA2MTAzMywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.kE29K1Zbc6alU4K104fERrrDbpTNjOvLYNRtTone9HI
+[04-Jun-2025 17:30:49 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 17:30:49 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 17:30:49 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 17:30:56 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 17:30:56 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 17:30:56 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 17:30:56 Europe/Berlin] JWT验证失败: Wrong number of segments
+[04-Jun-2025 17:40:13 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 17:40:13 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 17:40:13 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 17:40:13 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:40:13 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 17:40:13 Europe/Berlin] Request method: GET
+[04-Jun-2025 17:40:13 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTEwMzMsImV4cCI6MTc0OTA2MTAzMywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.kE29K1Zbc6alU4K104fERrrDbpTNjOvLYNRtTone9HI
+[04-Jun-2025 17:40:13 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 17:40:13 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 17:40:13 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 17:40:22 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 17:40:22 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 17:40:22 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 17:40:22 Europe/Berlin] JWT验证失败: Wrong number of segments
+[04-Jun-2025 17:45:55 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 17:45:55 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 17:45:55 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 17:45:55 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:45:55 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 17:45:55 Europe/Berlin] Request method: GET
+[04-Jun-2025 17:45:55 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTEwMzMsImV4cCI6MTc0OTA2MTAzMywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.kE29K1Zbc6alU4K104fERrrDbpTNjOvLYNRtTone9HI
+[04-Jun-2025 17:45:55 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 17:45:55 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 17:45:55 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 17:48:43 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 17:48:43 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 17:48:43 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 17:48:43 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:48:43 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 17:48:43 Europe/Berlin] Request method: GET
+[04-Jun-2025 17:48:43 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTEwMzMsImV4cCI6MTc0OTA2MTAzMywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.kE29K1Zbc6alU4K104fERrrDbpTNjOvLYNRtTone9HI
+[04-Jun-2025 17:48:43 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 17:48:43 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 17:48:43 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 17:49:16 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 17:49:16 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 17:49:16 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 17:49:16 Europe/Berlin] JWT验证失败: Wrong number of segments
+[04-Jun-2025 17:56:38 Europe/Berlin] API Request Received: /api/auth/login
+[04-Jun-2025 17:56:38 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 17:56:38 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 17:56:38 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:56:46 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 17:56:46 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 17:56:46 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 17:56:46 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 17:56:46 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 17:56:46 Europe/Berlin] Request method: GET
+[04-Jun-2025 17:56:46 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 17:56:46 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 17:56:46 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 17:56:46 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 17:56:52 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 17:56:52 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 17:56:52 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 17:56:52 Europe/Berlin] JWT验证失败: Wrong number of segments
+[04-Jun-2025 18:02:57 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:02:57 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 18:02:57 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 18:02:57 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:02:57 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:02:57 Europe/Berlin] Request method: GET
+[04-Jun-2025 18:02:57 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:02:57 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:02:57 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:02:57 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 18:03:05 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 18:03:05 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 18:03:05 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:03:05 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:03:11 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 18:03:11 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 18:03:11 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:03:11 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:03:14 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:03:14 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 18:03:14 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:03:14 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:03:14 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:03:14 Europe/Berlin] Request method: PUT
+[04-Jun-2025 18:03:14 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:03:14 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:03:14 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:03:14 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, registration_id = :registration_id, company_phone = :company_phone, company_address = :company_address, website = :website, industry_type = :industry_type, company_size = :company_size, founded_year = :founded_year, company_description = :company_description WHERE user_id = :user_id
+[04-Jun-2025 18:03:14 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest2
+    [:registration_id] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => etest
+    [:website] => etest.com
+    [:industry_type] => testing
+    [:company_size] => 501-1000 employees
+    [:founded_year] => 2025
+    [:company_description] => hi, here is etest. our job is help our customer to test any thing he want.
+    [:user_id] => 28
+)
+
+[04-Jun-2025 18:03:14 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:03:14 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 18:03:14 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 18:03:14 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:03:14 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:03:14 Europe/Berlin] Request method: GET
+[04-Jun-2025 18:03:14 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:03:14 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:03:14 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:03:14 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 18:03:22 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:03:22 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 18:03:22 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 18:03:22 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:03:22 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:03:22 Europe/Berlin] Request method: GET
+[04-Jun-2025 18:03:22 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:03:22 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:03:22 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:03:22 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 18:26:14 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 18:26:14 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 18:26:14 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:26:14 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:26:19 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 18:26:19 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 18:26:19 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:26:19 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:26:27 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:26:27 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 18:26:27 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:26:27 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:26:27 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:26:27 Europe/Berlin] Request method: PUT
+[04-Jun-2025 18:26:27 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:26:27 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:26:27 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:26:27 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, registration_id = :registration_id, company_phone = :company_phone, company_address = :company_address, website = :website, industry_type = :industry_type, company_size = :company_size, founded_year = :founded_year, company_description = :company_description WHERE user_id = :user_id
+[04-Jun-2025 18:26:27 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest2
+    [:registration_id] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => etest
+    [:website] => etest.com
+    [:industry_type] => testing
+    [:company_size] => 501-1000 employees
+    [:founded_year] => 2025
+    [:company_description] => hi, here is etest. our job is help our customer to test any thing he want.
+    [:user_id] => 28
+)
+
+[04-Jun-2025 18:26:27 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:26:27 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 18:26:27 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 18:26:27 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:26:27 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:26:27 Europe/Berlin] Request method: GET
+[04-Jun-2025 18:26:27 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:26:27 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:26:27 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:26:27 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 18:26:35 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:26:35 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 18:26:35 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 18:26:35 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:26:35 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:26:35 Europe/Berlin] Request method: GET
+[04-Jun-2025 18:26:35 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:26:35 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:26:35 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:26:35 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 18:26:40 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 18:26:40 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 18:26:40 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:26:40 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:26:45 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 18:26:45 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 18:26:45 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:26:45 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:26:47 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:26:47 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 18:26:47 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:26:47 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:26:47 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:26:47 Europe/Berlin] Request method: PUT
+[04-Jun-2025 18:26:47 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:26:47 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:26:47 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:26:47 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, registration_id = :registration_id, company_phone = :company_phone, company_address = :company_address, website = :website, industry_type = :industry_type, company_size = :company_size, founded_year = :founded_year, company_description = :company_description, cover_image = :cover_image WHERE user_id = :user_id
+[04-Jun-2025 18:26:47 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest2
+    [:registration_id] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => etest
+    [:website] => etest.com
+    [:industry_type] => testing
+    [:company_size] => 501-1000 employees
+    [:founded_year] => 2025
+    [:company_description] => hi, here is etest. our job is help our customer to test any thing he want.
+    [:cover_image] => http://jobpulse.local/uploads/company/28_684073c5f2119.jfif
+    [:user_id] => 28
+)
+
+[04-Jun-2025 18:26:47 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:26:47 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 18:26:47 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 18:26:47 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:26:47 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:26:47 Europe/Berlin] Request method: GET
+[04-Jun-2025 18:26:47 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:26:47 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:26:47 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:26:47 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 18:26:55 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 18:26:55 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 18:26:55 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:26:55 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:27:00 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 18:27:00 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 18:27:00 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:27:00 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:27:05 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:27:05 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 18:27:05 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:27:05 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:27:05 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:27:05 Europe/Berlin] Request method: PUT
+[04-Jun-2025 18:27:05 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:27:05 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:27:05 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:27:05 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, registration_id = :registration_id, company_phone = :company_phone, company_address = :company_address, website = :website, industry_type = :industry_type, company_size = :company_size, founded_year = :founded_year, company_description = :company_description, profile_image = :profile_image, cover_image = :cover_image WHERE user_id = :user_id
+[04-Jun-2025 18:27:05 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest2
+    [:registration_id] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => etest
+    [:website] => etest.com
+    [:industry_type] => testing
+    [:company_size] => 501-1000 employees
+    [:founded_year] => 2025
+    [:company_description] => hi, here is etest. our job is help our customer to test any thing he want.
+    [:profile_image] => http://jobpulse.local/uploads/company/28_684073cf3ff06.jpeg
+    [:cover_image] => http://jobpulse.local/uploads/company/28_684073d469837.jpeg
+    [:user_id] => 28
+)
+
+[04-Jun-2025 18:27:05 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:27:05 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 18:27:05 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 18:27:05 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:27:05 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:27:05 Europe/Berlin] Request method: GET
+[04-Jun-2025 18:27:05 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:27:05 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:27:05 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:27:05 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 18:32:11 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:32:11 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 18:32:11 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:32:11 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:32:11 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:32:11 Europe/Berlin] Request method: PUT
+[04-Jun-2025 18:32:11 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:32:11 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:32:11 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:32:11 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, registration_id = :registration_id, company_phone = :company_phone, company_address = :company_address, website = :website, industry_type = :industry_type, company_size = :company_size, founded_year = :founded_year, company_description = :company_description, profile_image = :profile_image, cover_image = :cover_image WHERE user_id = :user_id
+[04-Jun-2025 18:32:11 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest2
+    [:registration_id] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => etest
+    [:website] => etest.com
+    [:industry_type] => testing
+    [:company_size] => 501-1000 employees
+    [:founded_year] => 2025
+    [:company_description] => hi, here is etest. our job is help our customer to test any thing he want.
+    [:profile_image] => http://jobpulse.local/uploads/company/28_684073cf3ff06.jpeg
+    [:cover_image] => http://jobpulse.local/uploads/company/28_684073d469837.jpeg
+    [:user_id] => 28
+)
+
+[04-Jun-2025 18:32:11 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 18:32:11 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 18:32:11 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 18:32:11 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 18:32:11 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 18:32:11 Europe/Berlin] Request method: GET
+[04-Jun-2025 18:32:11 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 18:32:11 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 18:32:11 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 18:32:11 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 18:34:34 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 18:34:34 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 18:34:34 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 18:34:34 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 20:45:37 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 20:45:37 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 20:45:37 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 20:45:37 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 20:45:37 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 20:45:37 Europe/Berlin] Request method: GET
+[04-Jun-2025 20:45:37 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNTI1OTgsImV4cCI6MTc0OTA2MjU5OCwic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9._hnFC4IHFWTyfutBqP1tCwVX9Su_RuAr6sPmF7ipA54
+[04-Jun-2025 20:45:37 Europe/Berlin] JWT验证失败: Expired token
+[04-Jun-2025 20:45:37 Europe/Berlin] JWT validation failed
+[04-Jun-2025 20:46:07 Europe/Berlin] API Request Received: /api/auth/login
+[04-Jun-2025 20:46:07 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 20:46:07 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 20:46:07 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 20:46:09 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 20:46:09 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 20:46:09 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 20:46:09 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 20:46:09 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 20:46:09 Europe/Berlin] Request method: GET
+[04-Jun-2025 20:46:09 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNjI3NjcsImV4cCI6MTc0OTA3Mjc2Nywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.H6DOzzLd2IxdtlEJ23UGmNEGGcGTGwm7QQd236hZzb4
+[04-Jun-2025 20:46:09 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 20:46:09 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 20:46:09 Europe/Berlin] Executing profile query for user: 28
+[04-Jun-2025 20:46:39 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 20:46:39 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 20:46:39 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 20:46:39 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 20:46:39 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNjI3NjcsImV4cCI6MTc0OTA3Mjc2Nywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.H6DOzzLd2IxdtlEJ23UGmNEGGcGTGwm7QQd236hZzb4
+[04-Jun-2025 20:47:08 Europe/Berlin] API Request Received: /api/upload
+[04-Jun-2025 20:47:08 Europe/Berlin] REQUEST_METHOD: POST
+[04-Jun-2025 20:47:08 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 20:47:08 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 20:47:08 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNjI3NjcsImV4cCI6MTc0OTA3Mjc2Nywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.H6DOzzLd2IxdtlEJ23UGmNEGGcGTGwm7QQd236hZzb4
+[04-Jun-2025 20:48:24 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 20:48:24 Europe/Berlin] REQUEST_METHOD: PUT
+[04-Jun-2025 20:48:24 Europe/Berlin] HTTP_ORIGIN: http://jobpulse.local
+[04-Jun-2025 20:48:24 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 20:48:24 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 20:48:24 Europe/Berlin] Request method: PUT
+[04-Jun-2025 20:48:24 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNjI3NjcsImV4cCI6MTc0OTA3Mjc2Nywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.H6DOzzLd2IxdtlEJ23UGmNEGGcGTGwm7QQd236hZzb4
+[04-Jun-2025 20:48:24 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 20:48:24 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 20:48:24 Europe/Berlin] SQL: UPDATE Employer SET company_name = :company_name, registration_id = :registration_id, company_phone = :company_phone, company_address = :company_address, website = :website, industry_type = :industry_type, company_size = :company_size, founded_year = :founded_year, company_description = :company_description, profile_image = :profile_image, cover_image = :cover_image WHERE user_id = :user_id
+[04-Jun-2025 20:48:24 Europe/Berlin] Params: Array
+(
+    [:company_name] => etest2
+    [:registration_id] => etest12342
+    [:company_phone] => 12342
+    [:company_address] => etest
+    [:website] => etest.com
+    [:industry_type] => testing
+    [:company_size] => 501-1000 employees
+    [:founded_year] => 2025
+    [:company_description] => hi, here is etest. our job is help our customer to test any thing he want.
+    [:profile_image] => http://jobpulse.local/uploads/company/28_684094ac05091.jpeg
+    [:cover_image] => http://jobpulse.local/uploads/company/28_6840948f64116.png
+    [:user_id] => 28
+)
+
+[04-Jun-2025 20:48:24 Europe/Berlin] API Request Received: /api/employer/profile
+[04-Jun-2025 20:48:24 Europe/Berlin] REQUEST_METHOD: GET
+[04-Jun-2025 20:48:24 Europe/Berlin] HTTP_ORIGIN: none
+[04-Jun-2025 20:48:24 Europe/Berlin] Connected to database: jobpulse_db
+[04-Jun-2025 20:48:24 Europe/Berlin] API: employer.php accessed
+[04-Jun-2025 20:48:24 Europe/Berlin] Request method: GET
+[04-Jun-2025 20:48:24 Europe/Berlin] Received token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDkwNjI3NjcsImV4cCI6MTc0OTA3Mjc2Nywic3ViIjoiMjgiLCJlbWFpbCI6ImV0ZXN0MTIzNDJAZXhhbXBsZS5jb20iLCJpc3MiOiJqb2JwdWxzZS5hcGkiLCJyb2xlIjoiZW1wbG95ZXIiLCJyb2xlX2lkIjoiMyJ9.H6DOzzLd2IxdtlEJ23UGmNEGGcGTGwm7QQd236hZzb4
+[04-Jun-2025 20:48:24 Europe/Berlin] JWT valid. User ID: 28, Role: employer
+[04-Jun-2025 20:48:24 Europe/Berlin] User ID: 28, Role: employer
+[04-Jun-2025 20:48:24 Europe/Berlin] Executing profile query for user: 28

@@ -32,7 +32,7 @@ function generateRandomToken($length = 32) {
 
 // 记录错误日志（需确保logs目录存在）
 function logError($errorMessage) {
-    $logFile = __DIR__ . '/../../logs/error.log';
+    $logFile = __DIR__ . '/../logs/error.log';
     $timestamp = date('Y-m-d H:i:s');
     error_log("[$timestamp] $errorMessage\n", 3, $logFile);
 }

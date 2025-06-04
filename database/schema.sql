@@ -25,7 +25,16 @@ CREATE TABLE IF NOT EXISTS Employer (
     employer_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
     company_name VARCHAR(100) NOT NULL,
-    company_desc TEXT,
+    registration_id VARCHAR(20),
+    company_phone VARCHAR(20),
+    company_address TEXT,
+    website VARCHAR(255),
+    industry_type VARCHAR(50),
+    company_size VARCHAR(50),
+    founded_year YEAR,
+    company_description TEXT,
+    profile_image VARCHAR(255),
+    cover_image VARCHAR(255),
     is_approved BOOLEAN DEFAULT FALSE,
     FOREIGN KEY (user_id) REFERENCES User(user_id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
