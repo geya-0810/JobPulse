@@ -126,7 +126,7 @@ switch ($method) {
                     }
 
                     // 生成JWT（确保auth.php中已正确实现generateJWT函数）
-                    $token = generateJWT(
+                    $accessToken = generateAccessToken(
                         $user['user_id'], 
                         $email,
                         [
@@ -134,16 +134,203 @@ switch ($method) {
                             'role_id' => ($role === 'jobseeker') ? $user['seeker_id'] : $user['employer_id']
                         ]
                     );
-            
+                    
+                    $refreshToken = generateRefreshToken($user['user_id']);                    
+                    $refreshTokenExpiry = date('Y-m-d H:i:s', time() + (90 * 24 * 3600));
+                    // 存储Refresh Token到数据库
+                    $stmt = $db->prepare("
+                        INSERT INTO RefreshTokens (user_id, token, expires_at) 
+                        VALUES (:user_id, :token, :expires_at)
+                        ON DUPLICATE KEY UPDATE token = VALUES(token), expires_at = VALUES(expires_at)
+                    ");
+                    $stmt->execute([
+                        ':user_id' => $user['user_id'],
+                        ':token' => $refreshToken,
+                        ':expires_at' => $refreshTokenExpiry
+                    ]);
+                    
+                    // 返回双Token
                     echo json_encode([
-                        'token' => $token,
+                        'access_token' => $accessToken,
+                        'refresh_token' => $refreshToken,
                         'user_type' => $role,
                         'user_id' => $user['user_id']
                     ]);
+                    
+                    // $token = generateJWT(
+                    //     $user['user_id'], 
+                    //     $email,
+                    //     [
+                    //         'role' => $role,
+                    //         'role_id' => ($role === 'jobseeker') ? $user['seeker_id'] : $user['employer_id']
+                    //     ]
+                    // );
+            
+                    // echo json_encode([
+                    //     'token' => $token,
+                    //     'user_type' => $role,
+                    //     'user_id' => $user['user_id']
+                    // ]);
             
                 } catch (PDOException $e) {
                     error_log("Login error: " . $e->getMessage());
                     dieWithJsonError('Login failed', 500);
+                }
+                break;
+                
+            case 'refresh':
+                $data = json_decode(file_get_contents('php://input'), true);
+                $refreshToken = $data['refresh_token'] ?? '';
+                
+                if (empty($refreshToken)) {
+                    dieWithJsonError('Refresh token is required', 400);
+                }
+                
+                try {
+                    // 验证Refresh Token
+                    $decoded = validateJWT($refreshToken);
+                    if (!$decoded) {
+                        dieWithJsonError('Invalid refresh token', 401);
+                    }
+                    
+                    // 检查Token类型
+                    if ($decoded->token_type !== 'refresh') {
+                        dieWithJsonError('Invalid token type', 401);
+                    }
+
+                    $db->beginTransaction();                    
+                    // 检查该user是否拥有Token在数据库中
+                    $stmt = $db->prepare("
+                        SELECT * FROM RefreshTokens 
+                        WHERE user_id = :user_id AND revoked = 0 AND expires_at > NOW()
+                    ");
+                    $stmt->execute([
+                        ':user_id' => $decoded->sub
+                    ]);
+                    $tokenRecords = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                    $rowCount = count($tokenRecords);
+
+                    if ($rowCount > 1) {
+                        $updateStmt = $db->prepare("
+                            UPDATE RefreshTokens 
+                            SET revoked = 1
+                            WHERE user_id = :user_id AND expires_at < NOW()
+                        ");
+                        $updateStmt->execute([
+                            ':user_id' => $decoded->sub,
+                        ]);
+
+                        error_log("Warning: Multiple active refresh tokens found for user_id: " . $decoded->sub . " and token: " . $refreshToken . ". All have been revoked.");
+                        $db->commit(); // 提交事务
+
+                    } else if ($rowCount === 1) { // expected result
+                        //$tokenRecord = $tokenRecords[0]; 
+                        $db->commit(); // 提交事务
+                        return true; 
+                    } else { // $rowCount === 0
+                        $db->commit(); // 提交事务 (或者直接 rollback，看你对事务的粒度控制)
+                        dieWithJsonError('Invalid or expired refresh token', 401);
+                    }
+                    
+                    // 获取用户信息
+                    $stmt = $db->prepare("
+                        SELECT u.*, 
+                            j.seeker_id AS seeker_id,
+                            e.employer_id AS employer_id
+                        FROM User u
+                        LEFT JOIN JobSeeker j ON u.user_id = j.user_id
+                        LEFT JOIN Employer e ON u.user_id = e.user_id
+                        WHERE u.user_id = :user_id
+                    ");       
+                    $stmt->execute([':user_id' => $decoded->sub]);
+                    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+                    
+                    if (!$user) {
+                        dieWithJsonError('User not found', 404);
+                    }
+                    
+                    // 生成新的Access Token
+                    $newAccessToken = generateAccessToken(
+                        $user['user_id'], 
+                        $user['email'],
+                        [
+                            'role' => $user['user_type'],
+                            'role_id' => $user['user_type'] === 'jobseeker' ? $user['seeker_id'] : $user['employer_id']
+                        ]
+                    );
+                    
+                    // 更新Refresh Token过期时间
+                    $newRefreshToken = generateRefreshToken($user['user_id']);
+                    $newRefreshTokenExpiry = date('Y-m-d H:i:s', time() + (90 * 24 * 3600));
+                    error_log('access_token: ' . $newAccessToken);
+                    error_log('refresh_token: ' . $newRefreshToken);
+                    error_log('expiry: ' . $newRefreshTokenExpiry);
+
+                    
+                    $stmt = $db->prepare("
+                        UPDATE RefreshTokens 
+                        SET token = :new_token, expires_at = :expires_at 
+                        WHERE user_id = :user_id AND token = :old_token
+                    ");
+                    $stmt->execute([
+                        ':new_token' => $newRefreshToken,
+                        ':expires_at' => $newRefreshTokenExpiry,
+                        ':user_id' => $user['user_id'],
+                        ':old_token' => $refreshToken
+                    ]);
+                    error_log('access_token: ' . $newAccessToken);
+                    error_log('refresh_token: ' . $newRefreshToken);
+                    // 返回新的双Token
+                    echo json_encode([
+                        'access_token' => $newAccessToken,
+                        'refresh_token' => $newRefreshToken
+                    ]);
+                    
+                } catch (Exception $e) {
+                    $db->rollBack();
+                    error_log("Token refresh failed: " . $e->getMessage());
+                    dieWithJsonError('Token refresh failed', 401);
+                }
+                break;
+
+            case 'revoke':
+                $data = json_decode(file_get_contents('php://input'), true);
+                $refreshToken = $data['refresh_token'] ?? '';
+                
+                if (empty($refreshToken)) {
+                    dieWithJsonError('Refresh token is required', 400);
+                }
+                
+                try {
+                    $decoded = validateJWT($refreshToken);
+                    if (!$decoded) {
+                        dieWithJsonError('Invalid refresh token', 401);
+                    }
+                    
+                    // 检查Token类型
+                    if ($decoded->token_type !== 'refresh') {
+                        dieWithJsonError('Invalid token type', 401);
+                    }
+                    
+                    // 撤销 token
+                    $stmt = $db->prepare("
+                        UPDATE RefreshTokens 
+                        SET revoked = 1 
+                        WHERE token = :token AND user_id = :user_id
+                    ");
+                    $stmt->execute([
+                        ':token' => $refreshToken,
+                        ':user_id' => $decoded->sub
+                    ]);
+                    
+                    // 检查是否成功撤销
+                    if ($stmt->rowCount() > 0) {
+                        echo json_encode(['success' => true]);
+                    } else {
+                        dieWithJsonError('Token not found or already revoked', 404);
+                    }
+                } catch (Exception $e) {
+                    dieWithJsonError('Token revocation failed', 500);
                 }
                 break;
 

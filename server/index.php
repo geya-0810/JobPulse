@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 // API路由
 if (preg_match('/^\/api\//', $_SERVER['REQUEST_URI'])) {  
     // API路由映射
-    $router->map('POST', '/api/auth/[register|login:action]', function($action) {
+    $router->map('POST', '/api/auth/[register|login|refresh|revoke:action]', function($action) {
         $_GET['action'] = $action;
         require __DIR__ . '/api/auth.php';
     });

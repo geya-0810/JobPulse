@@ -1,22 +1,24 @@
 // src/components/jobseeker/Profile.jsx
-import React, { useState, useRef, useContext } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from "../../context/AuthContext";
 import styles from './Profile.module.css'; // 修改了导入的模块名
 
 const Profile = () => {
-  //const {userType } = useContext(AuthContext);
- 
-  //// const profileImageRef = useRef(null);
-  //// const coverImageRef = useRef(null);
-  //const [isSaving, setIsSaving] = useState(false);
   // Mock user data - in real implementation, this would come from API/context
-  const [userData, setUserData] = useState(null);
-  //const [isLoading, setIsLoading] = useState(true);
-  const [editFormData, setEditFormData] = useState({});
-  //const [error, setError] = useState("");
-  const [isEditing, setIsEditing] = useState(false);
+  const [userData, setUserData] = useState({
+    userId: '5313',
+    userName: 'DMBrown',
+    password: '##########',
+    fullName: 'David Michael Brown',
+    ic: '160229-12-1234',
+    email: 'david0720@gmail.com',
+    phone: '012-345 6789',
+    address: '********************************\n********************************\n**** **** ******************',
+    profileImage: null
+  });
 
+  const [isEditing, setIsEditing] = useState(false);
+  const [editFormData, setEditFormData] = useState({...userData});
   const fileInputRef = useRef(null);
 
   // Handle profile image upload

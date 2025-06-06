@@ -68,6 +68,21 @@ CREATE TABLE IF NOT EXISTS Application (
     FOREIGN KEY (seeker_id) REFERENCES JobSeeker(seeker_id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE IF NOT EXISTS RefreshTokens (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    token VARCHAR(128) NOT NULL UNIQUE,
+    expires_at DATETIME NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    revoked BOOLEAN DEFAULT FALSE,
+    device_info VARCHAR(255),
+    ip_address VARCHAR(45),
+    FOREIGN KEY (user_id) REFERENCES User(user_id) ON DELETE CASCADE
+);
+
+CREATE INDEX idx_refresh_token ON RefreshTokens(token);
+CREATE INDEX idx_refresh_token_user ON RefreshTokens(user_id);
+
 -- CREATE INDEX idx_user_email ON User(email);
 -- CREATE INDEX idx_job_location ON Job(location);
 -- 在User表中添加user_type字段

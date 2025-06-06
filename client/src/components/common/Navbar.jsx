@@ -1,12 +1,17 @@
 // components/common/Navbar.jsx
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from './../../context/AuthContext.js';
 import styles from './Navbar.module.css';
 import logo from './../../jobpulselogo.png';
 
 const Navbar = () => {
   const { isLoggedIn, userType, logout } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const userlogout = async () => {
+    const isLoggedOutSuccessfully = await logout();
+    if(isLoggedOutSuccessfully) {navigate('/login'); }// 只有当登出成功时才跳转
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -22,7 +27,7 @@ const Navbar = () => {
 
       <div className={styles.linkContainer}>
         <ul className={styles.navLinks}>
-        <li><Link to="/">HOME</Link></li>
+        <li><Link to="/">Home</Link></li>
         {isLoggedIn ? (
           <>
           {userType === 'employer' ? (
@@ -49,7 +54,7 @@ const Navbar = () => {
                </div> */}
             </>
           )}
-          <li><button onClick={logout} className={styles.logoutButton}>Log Out</button></li>
+          <li><button onClick={userlogout} className={styles.logoutButton}>Log Out</button></li>
           </>
         ) : (
           <>

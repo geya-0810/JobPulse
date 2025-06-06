@@ -66,7 +66,7 @@ switch ($method) {
             WHERE u.user_id = :user_id
         ");
         $stmt->bindParam(':user_id', $userId);
-        error_log("Executing profile query for user: $userId");
+        //error_log("Executing profile query for user: $userId");
         $stmt->execute();
         $profile = $stmt->fetch(PDO::FETCH_ASSOC); // 使用 fetch() 获取单行结果
         

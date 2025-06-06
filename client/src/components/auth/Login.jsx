@@ -1,6 +1,6 @@
 // components/auth/Login.jsx
 import { useState, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { AuthContext } from './../../context/AuthContext.js';
 import styles from "./auth.module.css";
 
@@ -28,9 +28,9 @@ const Login = () => {
 
       const data = await response.json();
       if (response.ok) {
-        // 保存token并跳转
-        login(data.token, data.user_type);  // 替换原来的localStorage.setItem
-        navigate(`/`);
+        // 保存token
+        login(data.access_token, data.refresh_token ,data.user_type);  
+        navigate('/');
       } else {throw new Error(data.error || "Login failed");}
     } catch (err) {
       setError(err.message);

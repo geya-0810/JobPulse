@@ -1,11 +1,18 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
-import { getCompanyProfile, updateCompanyProfile, uploadProfileImage, uploadCoverImage } from "../../services/EmployerService";
+import { useApi } from "../../services/Api"
+import { 
+  getCompanyProfile, 
+  updateCompanyProfile, 
+  uploadProfileImage, 
+  uploadCoverImage 
+} from "../../services/EmployerService";
 import styles from "./CompanyProfile.module.css";
 
 const CompanyProfile = () => {
-  const {userType } = useContext(AuthContext);
+  const {userType} = useContext(AuthContext);
+  const api = useApi();
   const [companyData, setCompanyData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isEditing, setIsEditing] = useState(false);
@@ -16,11 +23,30 @@ const CompanyProfile = () => {
   const [isSaving, setIsSaving] = useState(false);
 
   // 获取企业资料
+    // 在获取企业资料前检查Token有效性
+  // useEffect(() => {
+  //   const checkTokenAndFetch = async () => {
+  //     try {
+  //       // 尝试获取资料，如果失败则刷新Token
+  //       const data = await getCompanyProfile();
+  //       setCompanyData(data);
+  //       setEditFormData({ ...data });
+  //     } catch (error) {
+  //       setError("Failed to load company profile");
+  //     } finally {
+  //       setIsLoading(false);
+  //     }
+  //   };
+
+  //   if (userType === "employer") {
+  //     checkTokenAndFetch();
+  //   }
+  // }, [userType, refreshToken]);
   useEffect(() => {
     let isMounted = true;
     const fetchProfile = async () => {
       try {
-        const data = await getCompanyProfile();
+        const data = await getCompanyProfile(api);
         if (isMounted) {
           setCompanyData(data);
           setEditFormData({ ...data });
@@ -37,97 +63,21 @@ const CompanyProfile = () => {
     }
 
     return () => {isMounted = false;}; // 组件卸载时取消
-  }, [userType]);
-  // useEffect(() => {
-  //   console.log("Fetching profile...", { token, userType, userId });
-  //   const fetchProfile = async () => {
-  //     try {
-  //       console.log("Calling getCompanyProfile");
-  //       const data = await getCompanyProfile(token);
-  //       console.log("Profile data received:", data);
-  //       setCompanyData(data);
-  //       setEditFormData({ ...data });
-  //     } catch (error) {
-  //       console.error('Failed to load company profile:', error);
-  //       setError('Failed to load company profile');
-  //     } finally {
-  //       setIsLoading(false);
-  //     }
-  //   };
-
-  //   if (token && userType === 'employer' && userId) {
-  //     fetchProfile();
-  //   }
-  // }, [token, userType, userId]);
+  }, [userType, api]);
 
   // 处理图片上传
   const handleProfileImageClick = () => {
     profileImageRef.current.click();
   };
 
-  // 替换 handleProfileImageChange 函数
-  // const handleProfileImageChange = async (e) => {
-  //   if (e.target.files && e.target.files[0]) {
-  //     const formData = new FormData();
-  //     formData.append("profileImage", e.target.files[0]);
-
-  //     try {
-  //       const response = await axios.post(
-  //         "/api/upload", // 使用上传API
-  //         formData,
-  //         {
-  //           headers: {
-  //             "Content-Type": "multipart/form-data",
-  //             Authorization: `Bearer ${token}`,
-  //           },
-  //         }
-  //       );
-
-  //       // 更新状态
-  //       setEditFormData({
-  //         ...editFormData,
-  //         profile_image: response.data.profileImage.url,
-  //       });
-  //     } catch (error) {
-  //       console.error("Upload failed:", error);
-  //       setError("Failed to upload profile image");
-  //     }
-  //   }
-  // };
-
   const handleCoverImageClick = () => {
     coverImageRef.current.click();
   };
 
-  // 添加封面图片处理
-  // const handleCoverImageChange = async (e) => {
-  //   if (e.target.files && e.target.files[0]) {
-  //     const formData = new FormData();
-  //     formData.append("coverImage", e.target.files[0]);
-
-  //     try {
-  //       const response = await axios.post("/api/upload", formData, {
-  //         headers: {
-  //           "Content-Type": "multipart/form-data",
-  //           Authorization: `Bearer ${token}`,
-  //         },
-  //       });
-
-  //       setEditFormData({
-  //         ...editFormData,
-  //         cover_image: response.data.coverImage.url,
-  //       });
-  //     } catch (error) {
-  //       console.error("Upload failed:", error);
-  //       setError("Failed to upload cover image");
-  //     }
-  //   }
-  // };
-
   const handleProfileImageChange = async (e) => {
     if (e.target.files && e.target.files[0]) {
       try {
-        const response = await uploadProfileImage(e.target.files[0]);
+        const response = await uploadProfileImage(api, e.target.files[0]);
         setEditFormData({
           ...editFormData,
           profile_image: response.profileImage.url,
@@ -139,10 +89,11 @@ const CompanyProfile = () => {
     }
   };
 
+  // 添加封面图片处理
   const handleCoverImageChange = async (e) => {
     if (e.target.files && e.target.files[0]) {
       try {
-        const response = await uploadCoverImage(e.target.files[0]);
+        const response = await uploadCoverImage(api, e.target.files[0]);
         setEditFormData({
           ...editFormData,
           cover_image: response.coverImage.url,
@@ -167,7 +118,7 @@ const CompanyProfile = () => {
   // const toggleEditMode = async () => {
   //   if (isEditing) {
   //     try {
-  //       // 准备发送的数据
+  //       setIsSaving(true);
   //       const dataToSend = {
   //         company_name: editFormData.company_name,
   //         registration_id: editFormData.registration_id,
@@ -179,28 +130,41 @@ const CompanyProfile = () => {
   //         company_size: editFormData.company_size,
   //         founded_year: editFormData.founded_year,
   //         company_description: editFormData.company_description,
-  //         password: editFormData.password, // 密码单独处理
+  //         password: editFormData.password,
+  //         profile_image: editFormData.profile_image,
+  //         cover_image: editFormData.cover_image
   //       };
 
-  //       await updateCompanyProfile(dataToSend);
+  //       try {
+  //         await updateCompanyProfile(api, dataToSend);
+  //       } catch (error) {
+  //         if (error.response?.status === 401) {
+  //           const newAccessToken = await refreshToken();
+  //           if (newAccessToken) {
+  //             await updateCompanyProfile(api, dataToSend);
+  //           } else {
+  //             throw new Error("Session expired. Please log in again.");
+  //           }
+  //         } else {
+  //           throw error;
+  //         }
+  //       }
 
-  //       // 刷新数据
-  //       const updatedData = await getCompanyProfile();
+  //       const updatedData = await getCompanyProfile(api);
   //       setCompanyData(updatedData);
+  //       setEditFormData({ ...updatedData });
   //       setError("");
   //     } catch (error) {
-  //       console.error("Update failed:", error);
-  //       setError("Failed to update profile. Please try again.");
-  //       return; // 保持编辑模式
+  //       setError(error.message || "Failed to update profile");
+  //     } finally {
+  //       setIsSaving(false);
   //     }
   //   } else {
-  //     // 进入编辑模式，初始化表单数据
-  //     setEditFormData({ ...companyData, password: "" }); // 重置密码字段
+  //     setEditFormData({ ...companyData, password: "" });
   //   }
-
+    
   //   setIsEditing(!isEditing);
   // };
-
   const toggleEditMode = async () => {
     if (isEditing) {
       try {
@@ -222,13 +186,12 @@ const CompanyProfile = () => {
           cover_image: editFormData.cover_image
         };
 
-        await updateCompanyProfile(dataToSend);
+        await updateCompanyProfile(api, dataToSend);
 
         // 刷新数据
-        const updatedData = await getCompanyProfile();
+        const updatedData = await getCompanyProfile(api);
         setCompanyData(updatedData);
         setEditFormData({ ...updatedData }); // 确保更新编辑表单数据
-        setError("");
       } catch (error) {
         console.error("Update failed:", error);
         setError("Failed to update profile. Please try again.");
@@ -576,14 +539,14 @@ const CompanyProfile = () => {
               <button className={styles.addButton}>+ Add Media</button>
             </div>
           </div>
-
-          <div className={styles.companySection}>
+ 
+          {/*<div className={styles.companySection}>
             <h2>Company Benefits</h2>
             <div className={`${styles.sectionContent} ${styles.emptySection}`}>
               <p>List benefits that make your company a great place to work</p>
               <button className={styles.addButton}>+ Add Benefits</button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.employerSidebar}>
