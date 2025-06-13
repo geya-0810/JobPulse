@@ -214,7 +214,7 @@ switch ($method) {
                         $updateStmt = $db->prepare("
                             UPDATE RefreshTokens 
                             SET revoked = 1
-                            WHERE user_id = :user_id AND expires_at < NOW()
+                            WHERE (user_id = :user_id AND expires_at < NOW()) OR (expires_at <= NOW())
                         ");
                         $updateStmt->execute([
                             ':user_id' => $decoded->sub,
@@ -302,35 +302,51 @@ switch ($method) {
                 }
                 
                 try {
-                    $decoded = validateJWT($refreshToken);
+                    // 使用新的验证方法，允许过期token
+                    $decoded = validateJWT($refreshToken, true); // 第二个参数true表示允许过期token
+                    
                     if (!$decoded) {
                         dieWithJsonError('Invalid refresh token', 401);
                     }
                     
-                    // 检查Token类型
-                    if ($decoded->token_type !== 'refresh') {
-                        dieWithJsonError('Invalid token type', 401);
+                    // 检查是否包含必要的用户ID信息
+                    if (!isset($decoded->sub)) {
+                        dieWithJsonError('Invalid token structure', 401);
                     }
                     
-                    // 撤销 token
+                    $user_id = $decoded->sub;
+                    
+                    // 撤销 token - 直接根据token字符串操作
                     $stmt = $db->prepare("
                         UPDATE RefreshTokens 
                         SET revoked = 1 
-                        WHERE token = :token AND user_id = :user_id
+                        WHERE token = :token
                     ");
-                    $stmt->execute([
-                        ':token' => $refreshToken,
-                        ':user_id' => $decoded->sub
-                    ]);
+                    $stmt->execute([':token' => $refreshToken]);
                     
                     // 检查是否成功撤销
                     if ($stmt->rowCount() > 0) {
                         echo json_encode(['success' => true]);
                     } else {
-                        dieWithJsonError('Token not found or already revoked', 404);
+                    //     // 尝试插入一条撤销记录，防止token不存在时也能标记为撤销
+                    //     $stmt = $db->prepare("
+                    //         INSERT INTO RefreshTokens (user_id, token, revoked, expires_at)
+                    //         VALUES (:user_id, :token, 1, NOW())
+                    //         ON DUPLICATE KEY UPDATE revoked = 1
+                    //     ");
+                    //     $stmt->execute([
+                    //         ':user_id' => $user_id,
+                    //         ':token' => $refreshToken
+                    //     ]);
+                        
+                    //     if ($stmt->rowCount() > 0) {
+                    //         echo json_encode(['success' => true]);
+                    //     } else {
+                            dieWithJsonError('Token not found', 404);
+                    //    }
                     }
                 } catch (Exception $e) {
-                    dieWithJsonError('Token revocation failed', 500);
+                    dieWithJsonError('Token revocation failed: ' . $e->getMessage(), 500);
                 }
                 break;
 

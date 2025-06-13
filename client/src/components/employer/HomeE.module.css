@@ -1,0 +1,280 @@
+/* src/components/employer/PostRecruitment.module.css */
+
+.postRecruitmentContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Section styling */
+.jobPostingsSection {
+  margin-bottom: 30px;
+}
+
+.searchContainer {
+  display: flex;
+  width: 50%;
+  max-width: 500px;
+  justify-self: right;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid black;
+  height: 100%;
+}
+
+.searchButton, .searchInput {
+  width: 100%;
+  margin: 0px;
+  border: 0px;  
+  border-radius: 0px;
+  height: 100%;
+}
+
+.searchInput {
+  font-size: 14px;
+  flex: 9;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 10px 15px;
+}
+
+.searchButton {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex: 1;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 40px;
+  position: sticky;
+  top: 170px;
+  bottom: 9000px;
+  background-color: transparent;
+  z-index: 9;
+}
+
+.sectionTitle {
+  background-color: white;
+  display: flex; /* 将 sectionTitle 设置为 Flex 容器 */
+  justify-content: center;
+  align-items: center;  
+  margin: 0;
+  color: black;
+  cursor: pointer; /* Ensure cursor is a pointer */
+  transition: color 0.3s ease; /* Smooth color transition */
+  border: 1px solid #0800ff;
+  height: 100%;
+  align-self: center;
+  width: 25%;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 4px 4px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+}
+
+.sectionTitle:hover {
+  color: #007bff; /* Change color on hover */
+  border: 1px solid black;
+}
+
+/* Job grid layout */
+.jobGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Job card styling */
+.jobCard {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.jobHeader {
+  background-color: #f8f8f8;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.jobHeader h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.statusBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 3px 8px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.jobDetails {
+  padding: 12px;
+}
+
+.jobDetail {
+  margin-bottom: 8px;
+}
+
+.jobDetail strong {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+.jobDetail p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.jobActions {
+  padding: 12px;
+  border-top: 1px solid #eee;
+}
+
+.viewApplicantsBtn {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  text-align: center;
+  background-color: #17a2b8;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.viewApplicantsBtn:hover {
+  background-color: #138496;
+}
+
+.actionButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.closeButton,
+.reopenButton,
+.editButton {
+  padding: 8px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.closeButton:hover {
+  background-color: #c82333;
+}
+
+.reopenButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.reopenButton:hover {
+  background-color: #218838;
+}
+
+.editButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #5a6268;
+}
+
+/* Closed jobs styling */
+.closedJob {
+  opacity: 0.85;
+}
+
+/* Empty state */
+.emptyState {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  color: #6c757d;
+}
+
+/* Floating action button */
+.floatingActionButton {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 100;
+}
+
+.fabButton {
+  display: inline-block;
+  background-color: #17a2b8;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 4px 4px 20px 0 rgba(0, 0, 0, 0.19)
+
+}
+
+.fabButton:hover {
+  background-color: #138496;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .pageHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .pageHeader h1 {
+    margin-bottom: 15px;
+  }
+  
+  .searchContainer {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .jobGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .actionButtons {
+    grid-template-columns: 1fr;
+  }
+}

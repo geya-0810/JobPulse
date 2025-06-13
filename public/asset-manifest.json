@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.38b8f39a.css",
-    "main.js": "./static/js/main.cb840f4e.js",
+    "main.css": "./static/css/main.6a593572.css",
+    "main.js": "./static/js/main.6928b702.js",
     "static/media/jobpulselogo.png": "./static/media/jobpulselogo.4ed7c24dc8dc94339881.png",
     "index.html": "./index.html",
-    "main.38b8f39a.css.map": "./static/css/main.38b8f39a.css.map",
-    "main.cb840f4e.js.map": "./static/js/main.cb840f4e.js.map"
+    "main.6a593572.css.map": "./static/css/main.6a593572.css.map",
+    "main.6928b702.js.map": "./static/js/main.6928b702.js.map"
   },
   "entrypoints": [
-    "static/css/main.38b8f39a.css",
-    "static/js/main.cb840f4e.js"
+    "static/css/main.6a593572.css",
+    "static/js/main.6928b702.js"
   ]
 }

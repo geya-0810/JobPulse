@@ -32,7 +32,9 @@ if ($decoded->role !== 'employer') {
 }
 
 $baseUrl = $_ENV['BASE_URL'] ?? 'http://jobpulse.local';
-$uploadDir = $_ENV['UPLOADS_DIR'] ?? 'C:/xampp/htdocs/jobpulse/public/uploads/company';
+$uploadsBaseDir = $_ENV['UPLOADS_DIR'] ?? __DIR__ . '/../../public/uploads';
+$uploadDir = $uploadsBaseDir . '/company';
+
 
 // 确保上传目录存在
 if (!is_dir($uploadDir)) {

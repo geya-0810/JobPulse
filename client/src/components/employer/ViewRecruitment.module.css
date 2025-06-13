@@ -1,0 +1,657 @@
+/* src/components/employer/PostRecruitment.module.css */
+
+.postRecruitmentContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Section styling */
+.jobPostingsSection {
+  margin-bottom: 30px;
+}
+
+.searchContainer {
+  display: flex;
+  width: 50%;
+  max-width: 500px;
+  justify-self: right;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid black;
+  height: 100%;
+}
+
+.searchButton, .searchInput {
+  width: 100%;
+  margin: 0px;
+  border: 0px;  
+  border-radius: 0px;
+  height: 100%;
+}
+
+.searchInput {
+  font-size: 14px;
+  flex: 9;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 10px 15px;
+}
+
+.searchButton {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex: 1;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 40px;
+  position: sticky;
+  top: 140px;
+  bottom: 9000px;
+  background-color: transparent;
+  z-index: 9;
+}
+
+.sectionTitle {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin: 0;
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border: 1px solid #0800ff;
+  height: 100%;
+  align-self: center;
+  width: 25%;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 4px 4px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+}
+
+.sectionTitle:hover {
+  color: #007bff;
+  border: 1px solid black;
+}
+
+/* Job list container - linear layout */
+.jobListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Job list item styling - horizontal layout */
+.jobListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.2s ease;
+}
+
+.jobListItem:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jobListItem table {
+  width: 100%;
+  flex: 1;
+  table-layout: fixed; 
+}
+
+.jobListItem table th {
+  width: 20%;
+  text-align: left;
+  border: none;
+  padding: 10px 0;
+
+}
+
+.jobListItem table td {
+  text-align: left;
+  border: none;
+  vertical-align: middle;
+  padding: 10px 0;
+}
+
+.jobTitle {
+  
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  align-items: center;
+  vertical-align: middle;
+}
+
+
+.jobLocation,
+.jobSalary,
+.jobType {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.statusBadge {
+  padding: 4px 8px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.jobActions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.viewApplicantsBtn {
+  padding: 8px 1px;
+  background-color: #17a2b8;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 150px;
+  width: 100%;
+  border: 0;
+}
+
+.viewApplicantsBtn:hover {
+  background-color: #138496;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.closeButton,
+.reopenButton,
+.detailsButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 75px;
+}
+
+.closeButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.closeButton:hover {
+  background-color: #c82333;
+}
+
+.reopenButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.reopenButton:hover {
+  background-color: #218838;
+}
+
+.detailsButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.detailsButton:hover {
+  background-color: #5a6268;
+}
+
+/* Closed jobs styling */
+.closedJob {
+  opacity: 0.85;
+  background-color: #f1f3f4;
+}
+
+/* Empty state */
+.emptyState {
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  color: #6c757d;
+  margin-top: 20px;
+}
+
+/* Floating action button */
+.floatingActionButton {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 100;
+}
+
+.fabButton {
+  display: inline-block;
+  background-color: #17a2b8;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 4px 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fabButton:hover {
+  background-color: #138496;
+}
+
+/* .modalOverlay {
+      position: "fixed";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      backgroundColor: "rgba(0, 0, 0, 0.5)";
+      display: "flex";
+      alignItems: "center";
+      justifyContent: "center";
+      zIndex: 1000;
+      padding: "20px";
+    }
+
+.modal {
+      backgroundColor: "white";
+      borderRadius: "12px";
+      maxWidth: "800px";
+      width: "100%";
+      maxHeight: "90vh";
+      overflow: "auto";
+      position: "relative";
+    }
+    .modalHeader {
+      padding: "20px 24px";
+      borderBottom: "1px solid #dee2e6";
+      display: "flex";
+      justifyContent: "space-between";
+      alignItems: "center";
+    }
+    .modalTitle {
+      margin: 0,
+      fontSize: "18px",
+      fontWeight: "600",
+      color: "#333",
+    },
+    closeBtn: {
+      background: "none",
+      border: "none",
+      fontSize: "24px",
+      cursor: "pointer",
+      color: "#666",
+      padding: "0",
+      width: "30px",
+      height: "30px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    modalBody: {
+      padding: "24px",
+    },
+    detailSection: {
+      marginBottom: "20px",
+    },
+    detailLabel: {
+      fontWeight: "600",
+      color: "#495057",
+      marginBottom: "8px",
+      fontSize: "14px",
+    },
+    detailValue: {
+      color: "#666",
+      fontSize: "14px",
+      lineHeight: "1.5",
+      whiteSpace: "pre-line",
+    },
+    modalFooter: {
+      padding: "20px 24px",
+      borderTop: "1px solid #dee2e6",
+      display: "flex",
+      justifyContent: "flex-end",
+      gap: "10px",
+    },
+    deleteButton: {
+      backgroundColor: "#dc3545",
+      color: "white",
+      padding: "8px 16px",
+      border: "none",
+      borderRadius: "4px",
+      cursor: "pointer",
+      fontWeight: "500",
+    },
+    // Applicants modal styles
+    applicantCard: {
+      border: "1px solid #dee2e6",
+      borderRadius: "8px",
+      padding: "16px",
+      marginBottom: "16px",
+    },
+    applicantHeader: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "flex-start",
+      marginBottom: "12px",
+    },
+    applicantName: {
+      fontSize: "16px",
+      fontWeight: "600",
+      color: "#333",
+      margin: 0,
+    },
+    applicantStatus: {
+      padding: "4px 8px",
+      borderRadius: "12px",
+      fontSize: "12px",
+      fontWeight: "500",
+    },
+    applicantInfo: {
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+      gap: "8px",
+      fontSize: "14px",
+      color: "#666",
+    },
+    applicantActions: {
+      marginTop: "12px",
+      display: "flex",
+      gap: "8px",
+    },
+    .downloadBtn {
+      backgroundColor: "#007bff",
+      color: "white",
+      padding: "6px 12px",
+      border: "none",
+      borderRadius: "4px",
+      cursor: "pointer",
+      fontSize: "12px",
+    }, */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: auto;
+  position: relative;
+  max-height: 90vh; 
+  overflow-y: auto;
+}
+
+.modalHeader {
+  padding: 20px 24px;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBody {
+  padding: 24px;
+  text-align: left;
+}
+
+.detailSection {
+  margin-bottom: 20px;
+}
+
+.detailLabel {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.detailValue {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.modalFooter {
+  padding: 20px 24px;
+  border-top: 1px solid #dee2e6;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.detailGroupTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+/* 新增：详情网格布局 */
+.detailGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 至少250px宽的列，自动适应 */
+  gap: 15px 20px; /* 行间距和列间距 */
+  margin-bottom: 20px; /* 与下一个分组标题的间距 */
+}
+
+/* 新增：详情项（用于网格布局中的每个键值对） */
+.detailItem {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 新增：技能标签样式 */
+.skillTag {
+  display: inline-block;
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  white-space: nowrap; /* 防止标签内容换行 */
+}
+
+/* 确保 modalBody 内部的文本换行正常 */
+.detailValue {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6; /* 增加行高以提高可读性 */
+  white-space: pre-line; /* 保留文本中的换行符 */
+}
+
+/* 确保 modalBody 内的 ul/li 样式（如果 keyResponsibilities/requiredQualifications 使用了） */
+.detailValue ul, .detailValue ol {
+  margin: 0;
+  padding-left: 20px;
+}
+.detailValue li {
+  margin-bottom: 5px;
+}
+
+/* 响应式调整 */
+@media (max-width: 600px) {
+  .detailGrid {
+    grid-template-columns: 1fr; /* 在小屏幕上显示为单列 */
+  }
+}
+
+/* Applicants modal styles */
+.applicantCard {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.applicantHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.applicantName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.applicantStatus {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.applicantInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.applicantActions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.downloadBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .jobListItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .jobActions {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .actionButtons {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .searchContainer {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .sectionHeader {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+  
+  .sectionTitle {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .jobMeta {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .jobActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .actionButtons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

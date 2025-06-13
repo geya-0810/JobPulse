@@ -11,8 +11,10 @@ require __DIR__ . '/../config/databaseconnect.php';
 
 // 加载环境变量
 require_once __DIR__ . '/../../vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../config');
-$dotenv->safeLoad();
+// $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../config');
+// $dotenv->safeLoad();
+// $uploadsBaseDir = $_ENV['UPLOADS_DIR'] ?? __DIR__ . '/../../public/uploads';
+// $uploadDir = $uploadsBaseDir . '/company';
 
 header('Content-Type: application/json');
 
@@ -80,31 +82,52 @@ switch ($method) {
     case 'PUT':
         // 更新企业资料
         $data = json_decode(file_get_contents('php://input'), true);
-        
+       
+        // $stmt = $conn->prepare("SELECT profile_image, cover_image FROM Employer WHERE user_id = :user_id");
+        // $stmt->bindParam(':user_id', $userId);
+        // $stmt->execute();
+        // $oldImages = $stmt->fetch(PDO::FETCH_ASSOC);
+
         // 基本字段更新
         $updateFields = [
-            'company_name' => $data['company_name'] ?? '',
-            'registration_id' => $data['registration_id'] ?? '',
-            'company_phone' => $data['phone'] ?? '',
-            'company_address' => $data['address'] ?? '',
-            'website' => $data['website'] ?? '',
-            'industry_type' => $data['industry_type'] ?? '',
-            'company_size' => $data['company_size'] ?? '',
-            'founded_year' => $data['founded_year'] ?? '',
-            'company_description' => $data['company_description'] ?? '',
-            'profile_image' => $data['profile_image'] ?? '',
-            'cover_image' => $data['cover_image'] ?? ''
+            'company_name' => $data['company_name'] ?? NULL,
+            'registration_id' => $data['registration_id'] ?? NULL,
+            'company_phone' => $data['phone'] ?? NULL,
+            'company_address' => $data['address'] ?? NULL,
+            'website' => $data['website'] ?? NULL,
+            'industry_type' => $data['industry_type'] ?? NULL,
+            'company_size' => $data['company_size'] ?? NULL,
+            'founded_year' => ($data['founded_year'] ?? '') === '' ? NULL : $data['founded_year'] ?? NULL,
+            'company_description' => $data['company_description'] ?? NULL,
+            'profile_image' => $data['profile_image'] ?? NULL,
+            'cover_image' => $data['cover_image'] ?? NULL
         ];
         
+        // // 删除旧照片（如果存在）
+        // if (!empty($updateFields['profile_image']) && !empty($oldImages['profile_image']) && $updateFields['profile_image'] !== basename($oldImages['profile_image'])) {
+        //     $oldPath = $uploadDir . '/' . basename($oldImages['profile_image']);
+        //     if (file_exists($oldPath)) {
+        //         unlink($oldPath);
+        //         error_log("Deleted old profile image: " . $oldPath);
+        //     }
+        // }
+        // if (!empty($updateFields['cover_image']) && !empty($oldImages['cover_image']) && $updateFields['cover_image'] !== basename($oldImages['cover_image'])) {
+        //     $oldPath = $uploadDir . '/' . basename($oldImages['cover_image']);
+        //     if (file_exists($oldPath)) {
+        //         unlink($oldPath);
+        //         error_log("Deleted old cover image: " . $oldPath);
+        //     }
+        // }
         // 构建更新SQL
         $sql = "UPDATE Employer SET ";
         $params = [];
         
         foreach ($updateFields as $field => $value) {
-            if ($value !== null && $value !== '') {
+            if ($value !== null) {
                 $sql .= "$field = :$field, ";
                 $params[":$field"] = sanitizeInput($value);
             }
+            if($field == 'founded_year' && $value == null) $sql .= "$field = null, ";
         }
         
         // 特殊处理密码更新
@@ -119,7 +142,7 @@ switch ($method) {
                 exit;
             }
         }
-        
+
         // 如果没有其他字段更新，直接返回成功
         if (empty($params)) {
             sendJsonResponse(true, 'Profile updated successfully');

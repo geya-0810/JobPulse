@@ -11,10 +11,12 @@ import Home from './components/common/Home';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 
+import EmployerHome from './components/employer/HomeE';
 import CampanyProfile from './components/employer/CompanyProfile';
 import PostRecruitment from './components/employer/PostRecruitment';
+import ViewRecruitment from './components/employer/ViewRecruitment';
+import ViewRecruitmentN from './components/employer/ViewRecruitmentN';
 import Application from './components/employer/Application';
-
 
 import Apply from './components/jobseeker/Applied';
 import Resume from './components/jobseeker/Resume';
@@ -40,7 +42,10 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Register />} />
 
+            <Route path="/employer" element={<EmployerHome />} />
             <Route path="/company-profile" element={<CampanyProfile />} />
+            <Route path="/recruitment" element={<ViewRecruitment />} />
+            <Route path="/vrn" element={<ViewRecruitmentN />} />
             <Route path="/post-recruitment" element={<PostRecruitment />} />
             <Route path="/applications" element={<Application />} />
 

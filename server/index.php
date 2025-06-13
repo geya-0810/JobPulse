@@ -46,6 +46,20 @@ if (preg_match('/^\/api\//', $_SERVER['REQUEST_URI'])) {
         require __DIR__ . '/api/jobs.php';
     });
 
+    $router->map('POST', '/api/jobs', function() {
+        require __DIR__ . '/api/jobs.php';
+    }, 'jobs_post');
+
+    $router->map('PUT', '/api/jobs/[i:id]/status', function($id) {
+        $_GET['job_id'] = $id;
+        require __DIR__ . '/api/jobs.php';
+    }, 'jobs_status_put');
+
+    $router->map('DELETE', '/api/jobs/[i:id]', function($id) {
+        $_GET['job_id'] = $id;
+        require __DIR__ . '/api/jobs.php';
+    }, 'jobs_delete');
+
     $router->map('GET', '/api/employer/profile', function() {
         require __DIR__ . '/api/employer.php';
     }, 'employer_profile_get');
@@ -57,6 +71,16 @@ if (preg_match('/^\/api\//', $_SERVER['REQUEST_URI'])) {
     $router->map('POST', '/api/upload', function() {
         require __DIR__ . '/api/upload.php';
     }, 'upload');
+
+    $router->map('GET', '/api/posts', function() {
+        require __DIR__ . '/api/posts.php';
+    }, 'get_post');
+
+    $router->map('POST', '/api/posts', function() {
+        require __DIR__ . '/api/posts.php';
+    }, 'create_post');
+
+
 
 
     $match = $router->match();

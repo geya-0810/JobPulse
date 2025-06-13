@@ -15,33 +15,13 @@
 
     //putenv("JWT_SECRET=your_secure_key_here");
 
-    // function generateJWT($user_id, $email, $claims = []) {
-    //     $secretKey = $_ENV['JWT_SECRET'];
-    //     //    $secretKey = getenv('JWT_SECRET');
-
-    //     // error_log("JWT_SECRET值: " . (is_string($secretKey) ? "已设置" : "未设置"));
-    //     // error_log("当前环境变量: " . print_r($_ENV, true));
-
-    //     // 确保 $secretKey 是一个字符串
-    //     if (!is_string($secretKey) || empty($secretKey)) {
-    //         error_log('错误：JWT_SECRET 环境变量未设置或为空！');
-    //         throw new Exception('服务器配置错误：JWT 密钥无效');
-    //     }
-
-    //     $payload = array_merge([
-    //         "iat" => time(),
-    //         "exp" => time() + 10000, //7200, // 2小时有效期
-    //         "sub" => $user_id,
-    //         "email" => $email,
-    //         "iss" => "jobpulse.api"
-    //     ], $claims);
-        
-    //     return JWT::encode($payload, $secretKey, 'HS256');
-    // }
-
     // 生成 Access Token (1小时有效期)
     function generateAccessToken($user_id, $email, $claims = []) {
         $secretKey = $_ENV['JWT_SECRET'];
+        //    $secretKey = getenv('JWT_SECRET');
+
+        // error_log("JWT_SECRET值: " . (is_string($secretKey) ? "已设置" : "未设置"));
+        // error_log("当前环境变量: " . print_r($_ENV, true));
         if (!is_string($secretKey) || empty($secretKey)) {
             error_log('错误：JWT_SECRET 环境变量未设置或为空！');
             throw new Exception('服务器配置错误：JWT 密钥无效');
@@ -78,22 +58,59 @@
         return JWT::encode($payload, $secretKey, 'HS256');
     }
 
-    function validateJWT($token) {
+    function validateJWT($token, $allowExpired = false) {
         try {
             $secretKey = $_ENV['JWT_SECRET'];
-
-            // 再次确保 $secretKey 是一个字符串
             if (!is_string($secretKey) || empty($secretKey)) {
                 error_log('错误：JWT_SECRET 环境变量未设置或为空！');
                 throw new Exception('服务器配置错误：JWT 密钥无效');
             }
 
-            return JWT::decode($token, new Key($secretKey, 'HS256'));
+            // 添加过期token处理
+            $decoded = JWT::decode($token, new Key($secretKey, 'HS256'));
+            return $decoded;
+        } catch (Firebase\JWT\ExpiredException $e) {
+            // 如果允许过期token，尝试解码
+            if ($allowExpired) {
+                try {
+                    // 手动解码过期token
+                    $parts = explode('.', $token);
+                    if (count($parts) !== 3) {
+                        return false;
+                    }
+                    
+                    $payload = base64_decode(str_replace(['-', '_'], ['+', '/'], $parts[1]));
+                    return json_decode($payload);
+                } catch (Exception $e) {
+                    error_log("过期token解码失败: " . $e->getMessage());
+                    return false;
+                }
+            }
+            
+            error_log("JWT已过期: " . $e->getMessage());
+            return false;
         } catch (Exception $e) {
             error_log("JWT验证失败: " . $e->getMessage());
             return false;
         }
     }
+
+    // function validateJWT($token) {
+    //     try {
+    //         $secretKey = $_ENV['JWT_SECRET'];
+
+    //         // 再次确保 $secretKey 是一个字符串
+    //         if (!is_string($secretKey) || empty($secretKey)) {
+    //             error_log('错误：JWT_SECRET 环境变量未设置或为空！');
+    //             throw new Exception('服务器配置错误：JWT 密钥无效');
+    //         }
+
+    //         return JWT::decode($token, new Key($secretKey, 'HS256'));
+    //     } catch (Exception $e) {
+    //         error_log("JWT验证失败: " . $e->getMessage());
+    //         return false;
+    //     }
+    // }
 
     function getBearerToken() {
         $headers = getallheaders();

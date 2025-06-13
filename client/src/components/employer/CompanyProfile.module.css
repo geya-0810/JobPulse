@@ -1,16 +1,19 @@
 /* src/components/employer/CompanyProfile.module.css */
 
 /* Main container and layout styles */
-.employerContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
+.employerContainer,
+.postsSection {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   font-family: 'Arial', sans-serif;
 }
 
+.employerContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
 .employerMain {
   flex: 1;
   min-width: 0;
@@ -240,6 +243,138 @@
   resize: none; 
 }
 
+/* 新增样式 */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.postModal {
+  background-color: white;
+  border-radius: 8px;
+  width: 600px;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modalHeader {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.modalBody {
+  padding: 20px;
+}
+
+.modalFooter {
+  padding: 15px 20px;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancelButton {
+  padding: 8px 16px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.publishButton {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mediaSection {
+  margin-top: 20px;
+}
+
+.mediaUpload {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.uploadButton {
+  padding: 6px 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.uploadHint {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.selectedMedia {
+  margin-top: 15px;
+}
+
+.selectedMedia ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.selectedMedia li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.error {
+  color: #dc3545;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
 /* About section and other company sections */
 .companyAbout,
 .companySection {
@@ -456,6 +591,57 @@
 
 .contactBtn:hover {
   background-color: #138496;
+}
+
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.postItem {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.postMeta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.postCategory {
+  background-color: #e9ecef;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.postDate {
+  font-style: italic;
+}
+
+.postMedia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.mediaItem {
+  max-width: 200px;
+}
+
+.mediaItem img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.mediaItem video {
+  max-width: 100%;
 }
 
 /* Responsive styles */
